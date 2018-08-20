@@ -1,0 +1,71 @@
+﻿$icon-font-path: "../fonts/";
+@import "vendor/cerulean/_variables";
+@import "bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "vendor/cerulean/_bootswatch";
+
+@import "font-awesome/scss/font-awesome";
+
+// Animation
+div[ui-view] {
+    &.ng-enter {
+        transition: all 0.4s linear;
+        opacity: 0;
+    }
+
+    &.ng-enter-active {
+        opacity: 1;
+    }
+}
+
+// Spacing around pull-left and pull-right
+.panel{
+    &.pull-left {
+        margin-right: 10px;
+    }
+
+    &.pull-right {
+        margin-left: 10px;
+    }
+}
+
+// http://angular-ui.github.io/bootstrap/
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+$navbar-height: 30px;
+
+.navbar {
+    margin-bottom:0;
+}
+
+.navbar-brand {
+    max-height: $navbar-height;
+}
+
+.navbar-toggle {
+    margin-top: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.header-image {
+    background-size: cover;
+    max-height: $navbar-height;
+    min-height: 150px;
+
+    &.header-image-main {
+        background-image: url('/images/main/header3.jpg'); 
+    }
+    &.header-image-the-convent {
+        background-image: url('/images/theConvent/header.jpg'); 
+    }
+}
+
+.fb { 
+    background-color: #315896 !important;
+    color:#fff !important;
+    font-size: 14pt;
+
+    a {
+        color:#fff;
+    }
+}

@@ -1,0 +1,32 @@
+﻿<div class="row">
+    <div ng-controller="NunCarouselController as vm" class="col-lg-6 col-md-7 col-sm-9 col-xs-12">
+        <uib-carousel active="active" interval="vm.myInterval" class="img-responsive">
+            <uib-slide ng-repeat="slide in vm.slides track by slide.id" index="slide.id">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+                <div class="carousel-caption">
+                    <p>{{slide.text}}</p>
+                </div>
+            </uib-slide>
+        </uib-carousel>
+    </div>
+    <div class="col-lg-6 col-md-5 col-sm-3 col-xs-12" style="padding-top:2em;">
+        <blockquote class="blockquote-reverse">
+            <p>
+                "Called to a life of prayer
+                we seek to live the Gospel
+                in and for
+                our world of today.
+            </p>
+
+            <p>
+                We share our lives
+                and all that we do."
+            </p>
+            
+            <footer>The Poor Clares of Arundel.</footer>
+        </blockquote>
+        
+        <p><a href="http://youtu.be/u_RlaYfJGbc">See a slideshow of us here...</a></p>
+    </div>
+</div>
+

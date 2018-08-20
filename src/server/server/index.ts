@@ -11,7 +11,7 @@ const app = new Koa();
 app.use(logger);
 // app.use(routes);
 
-const publicPath = path.join(__dirname, '../', 'public');
+const publicPath = path.join(__dirname, '..', 'client', 'dist');
 app.use(serve(publicPath));
 
 app.listen(config.port);

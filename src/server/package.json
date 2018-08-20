@@ -1,0 +1,25 @@
+{
+  "name": "poor-clares-arundel-koa-server",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tslint --project . && tsc",
+    "start": "node dist/index.js",
+    "watch": "cross-env NODE_ENV=development nodemon --watch src/**/* -e ts,tsx --exec ts-node src/server/server.ts"
+  },
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.46",
+    "@types/koa-router": "^7.0.31",
+    "@types/koa-static": "^4.0.0",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.0.1"
+  }
+}

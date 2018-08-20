@@ -1,0 +1,39 @@
+﻿<div class="header-image header-image-the-convent"></div>
+<div class="navbar navbar-default" role="navigation" ng-controller="NavController as vm">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-click="vm.toggleCollapsed()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/theConvent/home" class="navbar-brand">The Convent</a>
+        </div>
+        <div uib-collapse="vm.isCollapsed" class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/theConvent/why">Why</a></li>
+                <li class="dropdown" uib-dropdown>
+                    <a class="dropdown-toggle" uib-dropdown-toggle>Seekers <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/theConvent/seekersAngela">Angela</a></li>
+                        <li><a href="/theConvent/seekersDebi">Debi</a></li>
+                        <li><a href="/theConvent/seekersIona">Iona</a></li>
+                        <li><a href="/theConvent/seekersVik">Vik</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" uib-dropdown>
+                    <a class="dropdown-toggle" uib-dropdown-toggle>Production Team <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/theConvent/producersComments">Producer's comments</a></li>
+                        <li><a href="/theConvent/photoGallery">Photo gallery</a></li>
+                    </ul>
+                </li>
+                <li><a href="/theConvent/guidedPrayer">Guided prayer</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/us">Back to main site</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

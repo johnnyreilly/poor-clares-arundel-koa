@@ -1,0 +1,32 @@
+﻿<div ng-controller="PrayerRequestController as prayerRequest">
+
+    <div class="alert"
+         ng-class="{'alert-success': prayerRequest.message.success, 'alert-danger': !prayerRequest.message.success}"
+         ng-show="prayerRequest.message">
+        <img class="img-thumbnail" src="/images/smalltau.jpg" ng-show="prayerRequest.message.success" />
+        {{ prayerRequest.message.text }}
+    </div>
+
+    <form name="form" novalidate role="form">
+        <div class="form-group has-feedback" ng-class="{'has-error': form.emailAddr.$dirty && form.emailAddr.$invalid}">
+            <label class="control-label">Email address</label>
+            <input name="emailAddr" type="email" class="form-control" placeholder="Enter email"
+                   ng-model="request.email"
+                   required />
+            <span ng-show="form.emailAddr.$dirty && form.emailAddr.$error.required">Tell us your email.</span>
+            <span ng-show="form.emailAddr.$dirty && form.emailAddr.$error.email">This is not a valid email.</span>
+        </div>
+        <div class="form-group has-feedback" ng-class="{'has-error': form.prayForText.$dirty && form.prayForText.$invalid}">
+            <label class="control-label">Your prayer request</label>
+            <textarea name="prayForText" class="form-control" rows="3" placeholder="Enter prayer request"
+                      ng-model="request.prayFor"
+                      required></textarea>
+            <span ng-show="form.prayForText.$dirty && form.prayForText.$error.required">You must tell us something to pray for!</span>
+        </div>
+        <button ng-click="prayerRequest.send(request)"
+                ng-disabled="form.$invalid"
+                type="button" class="btn btn-primary">
+            Send us your prayer request
+        </button>
+    </form>
+</div>
