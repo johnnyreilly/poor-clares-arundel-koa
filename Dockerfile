@@ -2,12 +2,12 @@
 ## IMAGE: build-client
 ##
 FROM node:10.4 AS build-client
-ENV NODE_ENV production
 WORKDIR /client
 
 # COPY src/client/package.json src/client/yarn.lock ./
 COPY src/client/package.json ./
-RUN yarn
+RUN yarn --network-timeout 100000
+# RUN npm install --verbose
 
 COPY src/client ./
 RUN yarn build
@@ -16,12 +16,11 @@ RUN yarn build
 ## IMAGE: build-server
 ##
 FROM node:10.4 AS build-server
-ENV NODE_ENV production
-WORKDIR /app
+WORKDIR /server
 
-# copy csproj and restore as distinct layers
 COPY src/server/package.json src/server/yarn.lock ./
-RUN yarn
+RUN yarn --network-timeout 100000
+# RUN npm install
 
 COPY src/server ./
 RUN yarn build
@@ -34,22 +33,25 @@ ENV NODE_ENV production
 
 WORKDIR /app
 COPY --from=build-client client/dist ./client/dist
-COPY --from=build-server server/dist ./server/dist
-
-WORKDIR /app/server
+COPY --from=build-server server/dist ./dist
+COPY --from=build-server server/package.json server/yarn.lock ./
+RUN yarn --network-timeout 100000
+# RUN npm install
 
 EXPOSE 3000
-CMD [ "node", "start" ]
-
+CMD [ "node", "dist/index.js" ]
 
 # then to build
 # docker build --tag poorclares .
 
 # then to run
-# docker run -p 80:80 --name poorclaresarundel poorclares
+# docker run -p 3000:3000 --name poorclaresarundel poorclares
 
 # docker stop poorclaresarundel
 # docker rm poorclaresarundel
+
+# debug failing build
+# docker run -it 5b272099a bash -il
 
 # to run terminal inside container
 # docker exec -it 191e bash 

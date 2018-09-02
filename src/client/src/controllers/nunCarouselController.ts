@@ -7,23 +7,23 @@ export class NunCarouselController {
     slides: Slide[] = [
         {
             id: 0,
-            image: "/images/main/Page2CommunityAtPrayer.JPG",
+            image: "/images/main/Page2CommunityAtPrayer.jpg",
             text: "Called to a life of prayer"
         }, {
             id: 1,
-            image: "/images/main/Page3SusannaAtPrayer.JPG",
+            image: "/images/main/Page3SusannaAtPrayer.jpg",
             text: "we seek to live the Gospel"
         }, {
             id: 2,
-            image: "/images/main/Page4ChapelGroupAtPrayer.JPG",
+            image: "/images/main/Page4ChapelGroupAtPrayer.jpg",
             text: "in and for"
         }, {
             id: 3,
-            image: "/images/main/Page5GroupOnLawn.JPG",
+            image: "/images/main/Page5GroupOnLawn.jpg",
             text: "our world of today."
         }, {
             id: 4,
-            image: "/images/main/Page6YohaanaInLibrary.JPG",
+            image: "/images/main/Page6YohaanaInLibrary.jpg",
             text: "We share our lives"
         }, {
             id: 5,
