@@ -42,10 +42,10 @@ EXPOSE 3000
 CMD [ "node", "dist/index.js" ]
 
 # then to build
-# docker build --tag poorclares .
+# docker build --tag poorclaresarundel .
 
 # then to run
-# docker run -p 3000:3000 --name poorclaresarundel poorclares
+# docker run -p 3000:3000 poorclaresarundel
 
 # docker stop poorclaresarundel
 # docker rm poorclaresarundel

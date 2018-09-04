@@ -10,7 +10,7 @@ services:
 install: true
 
 script:
-  - docker build --tag johnnyreilly/poorclares .
+  - docker build --tag johnnyreilly/poorclaresarundel .
 
 deploy:
   provider: script
