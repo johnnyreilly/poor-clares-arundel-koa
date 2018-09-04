@@ -11,3 +11,9 @@ install: true
 
 script:
   - docker build --tag johnnyreilly/poorclares .
+
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
