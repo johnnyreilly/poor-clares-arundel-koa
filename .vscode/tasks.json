@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build server",
+            "label": "server build",
             "type": "typescript",
             "tsconfig": "src\\server\\tsconfig.json",
             "options": {
@@ -19,6 +19,23 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "server watch",
+            "type": "typescript",
+            "tsconfig": "src\\server\\tsconfig.json",
+            "option": "watch",
+            "options": {
+				"shell": {
+					"executable": "powershell.exe"
+				}
+			},
+            "isBackground": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$tsc-watch"
         }
     ]
 }

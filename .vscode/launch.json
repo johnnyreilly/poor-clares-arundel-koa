@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "preLaunchTask": "Build server",
+            "preLaunchTask": "server build",
             "program": "${workspaceFolder}/src/server/server/index.ts",
             "cwd": "${workspaceFolder}",
             "env": { "NODE_ENV": "development" },
