@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tslint --project . && tsc",
+    "postbuild": "cpx \"static-files/**/*\" dist",
     "start": "node dist/index.js",
     "watch": "cross-env NODE_ENV=development nodemon --watch src/**/* -e ts,tsx --exec ts-node src/server/server.ts"
   },
@@ -20,6 +21,7 @@
     "@types/koa-send": "^4.1.1",
     "@types/koa-static": "^4.0.0",
     "@types/mailgun-js": "^0.16.0",
+    "cpx": "^1.5.0",
     "cross-env": "^5.2.0",
     "nodemon": "^1.18.3",
     "ts-node": "^7.0.1",

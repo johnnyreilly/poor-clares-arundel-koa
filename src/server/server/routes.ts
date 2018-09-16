@@ -1,21 +1,27 @@
+// tslint:disable:max-line-length
+import * as fs from 'fs';
 import * as koaBody from 'koa-body';
 import * as Router from 'koa-router';
 import * as Mailgun from 'mailgun-js';
+import * as path from 'path';
 
 const router = new Router();
-
-// "SmtpUserName": "oh no",
-// "SmtpPassword": "not telling you that",
-// "SmtpClientHost": "smtp.sendgrid.net",
-// "SmtpClientPort": "587",
-// "PrayerResponseEmailSubject": "Thankyou for your prayer request",
-// "PrayerRequestEmailSubject": "Prayer request",
-// "PrayerResponseEmailFilePathText": "Content/prayerResponse.txt",
-// "PrayerResponseEmailFilePathHtml": "Content/prayerResponse.html"
 
 const apiKey = process.env.APPSETTINGS_API_KEY; // long guid from mailgun
 const domain = process.env.APPSETTINGS_DOMAIN; // eg 'mg.priou.co.uk';
 const prayerRequestFromEmail = process.env.APPSETTINGS_PRAYER_REQUEST_FROM_EMAIL;
+const prayerRequestRecipientEmail = process.env.APPSETTINGS_PRAYER_REQUEST_RECIPIENT_EMAIL;
+
+function readFileAsPromise(filePath: string): Promise<string> {
+    return new Promise((resolve, reject) => {
+        fs.readFile(filePath, (err, data) => {
+            if (err) { reject(err); }
+            else {
+                resolve(data.toString());
+            }
+        });
+    });
+}
 
 // Send a message to the specified email address when you navigate to /submit/someaddr@email.com
 // The index redirects here
@@ -28,17 +34,36 @@ router.post('/api/PrayerRequest', koaBody(), async (ctx, next) => {
             throw new Error('APPSETTINGS_API_KEY and / or APPSETTINGS_DOMAIN not configured');
         }
 
+        if (!prayerRequestFromEmail || !prayerRequestRecipientEmail) {
+            throw new Error('APPSETTINGS_PRAYER_REQUEST_FROM_EMAIL and / or APPSETTINGS_PRAYER_REQUEST_RECIPIENT_EMAIL not configured');
+        }
+
         // We pass the api_key and domain to the wrapper, or it won't be able to identify + send emails
         const mailgun = new Mailgun({ apiKey, domain });
 
-        const data = {
+        const prayerRequest = {
+            from: prayerRequestFromEmail,
+            to: prayerRequestRecipientEmail,
+            subject: 'Please could you pray for me',
+            text: `Hi,
+
+I'd love it if you could pray for me about this:
+
+${prayFor}`
+        };
+        await mailgun.messages().send(prayerRequest);
+
+        const text = await readFileAsPromise(path.join(__dirname, 'prayerResponse.txt'));
+        const html = await readFileAsPromise(path.join(__dirname, 'prayerResponse.html'));
+        const reassuringResponse = {
             from: prayerRequestFromEmail,
             to: email,
-            subject: 'Please could you pray for me',
-            text: `Hi,\n\nI'd love it if you could pray for me about this: ${prayFor}`
+            subject: 'Your prayer request',
+            text,
+            html
         };
+        await mailgun.messages().send(reassuringResponse);
 
-        await mailgun.messages().send(data);
         ctx.body = { ok: true, text: 'Thanks for sending your prayer request - we will pray.' };
     } catch (exc) {
         console.error(exc.message);

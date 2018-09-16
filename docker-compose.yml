@@ -9,5 +9,6 @@ services:
       APPSETTINGS_API_KEY: 'this is the guid from mailgun'
       APPSETTINGS_DOMAIN: 'mg.priou.co.uk'
       APPSETTINGS_PRAYER_REQUEST_FROM_EMAIL: 'noreply@mg.priou.co.uk'
+      APPSETTINGS_PRAYER_REQUEST_RECIPIENT_EMAIL: 'info@priou.co.uk'
     ports:
       - 3000:3000
