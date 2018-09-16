@@ -5,14 +5,14 @@ import * as path from 'path';
 
 import { config } from './config';
 import { logger } from './logging';
-// import { routes } from "./routes";
+import { routes } from './routes';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 const app = new Koa();
 
 app.use(logger);
-// app.use(routes);
+app.use(routes);
 
 const publicPath = isDevelopment
     ? path.join(__dirname, '..', '..', 'client', 'dist')

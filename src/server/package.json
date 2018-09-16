@@ -8,15 +8,18 @@
   },
   "dependencies": {
     "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
     "koa-router": "^7.4.0",
     "koa-send": "^5.0.0",
-    "koa-static": "^5.0.0"
+    "koa-static": "^5.0.0",
+    "mailgun-js": "^0.20.0"
   },
   "devDependencies": {
     "@types/koa": "^2.0.46",
     "@types/koa-router": "^7.0.31",
     "@types/koa-send": "^4.1.1",
     "@types/koa-static": "^4.0.0",
+    "@types/mailgun-js": "^0.16.0",
     "cross-env": "^5.2.0",
     "nodemon": "^1.18.3",
     "ts-node": "^7.0.1",
