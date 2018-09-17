@@ -8,7 +8,23 @@ Built on Angular 1.x and Koa.
 
 ## Developing
 
-...
+To run locally you can `docker-compose up`; remember to update `docker-compose.yml` with variables.
+
+You can debug the server in VS Code by hitting F5.
+
+Before you do that either:
+
+```
+cd src/client
+yarn watch
+```
+
+or
+
+```
+cd src/client
+yarn build
+```
 
 ## Licence
 
