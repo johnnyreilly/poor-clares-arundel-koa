@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 import house from './images/house.jpg';
@@ -6,40 +9,49 @@ import house from './images/house.jpg';
 export class App extends React.Component {
     public render() {
         return (
-            <div className="container">
-                <h2>WELCOME TO THE POOR CLARES OF ARUNDEL</h2>
+            <div className="text-center">
+                <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                    <header className="masthead mb-auto">
+                        <div className="inner">
+                            <h2 className="masthead-brand">Welcome to the Poor Clares of Arundel</h2>
+                        </div>
+                    </header>
 
-                <a href="/us" title="Learn more about us...">
-                    <img
-                        id="house"
-                        src={house}
-                        alt="Click here to enter..."
-                        className="img-responsive img-rounded"
-                    />
-                </a>
-
-                <div className="row">
-                    <div className="col-sm-10 col-md-7">
-                        <p>
-                            We are sisters, who share prayer, work, laughter and struggles, and live according to the
-                            Form of Life drawn up by St Clare of Assisi in 1253.{' '}
+                    <main role="main" className="inner cover">
+                        <a href="/us" title="Learn more about us...">
+                            <img
+                                id="house"
+                                src={house}
+                                alt="Click here to enter..."
+                                className="img-responsive img-rounded"
+                            />
+                        </a>
+                        <p className="lead">
+                            We are sisters, who share prayer, work, laughter and struggles,
+                            <br />
+                            and live according to the Form of Life drawn up by St Clare of Assisi in 1253.
+                        </p>
+                        <p className="lead">
                             <a href="/us">Learn more about us...</a>
                         </p>
-                    </div>
-                </div>
+                    </main>
 
-                <div id="footer">
-                    © Community of Poor Clares, Arundel 2014
-                    <br /> Convent of Poor Clares, Crossbush, Arundel, BN18 9PJ
-                    <br /> e-mail:
-                    <a href="mailto:poorclarescrossbusharundel@hotmail.co.uk">
-                        poorclarescrossbusharundel@hotmail.co.uk
-                    </a>
-                    <span className="fb badge">
-                        <a href="https://www.facebook.com/poorclaresarundel">
-                            <i className="fa fa-facebook" aria-hidden="true" />
-                        </a>
-                    </span>
+                    <footer className="mastfoot mt-auto">
+                        <div className="inner">
+                            <p>
+                                © Community of Poor Clares, Arundel 2014
+                                <br /> Convent of Poor Clares, Crossbush, Arundel, BN18 9PJ
+                            </p>
+                            <p>
+                                <a href="mailto:poorclarescrossbusharundel@hotmail.co.uk">
+                                    <FontAwesomeIcon icon={faEnvelope} /> poorclarescrossbusharundel@hotmail.co.uk
+                                </a>{' '}
+                                <a href="https://www.facebook.com/poorclaresarundel">
+                                    <FontAwesomeIcon icon={faFacebook} /> Facebook
+                                </a>
+                            </p>
+                        </div>
+                    </footer>
                 </div>
             </div>
         );
