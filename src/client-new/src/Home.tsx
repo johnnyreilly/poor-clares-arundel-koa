@@ -1,10 +1,10 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './Home.css';
-
 import house from './images/house.jpg';
+import './Home.css';
 
 export class Home extends React.Component {
     public render() {
@@ -18,21 +18,21 @@ export class Home extends React.Component {
                     </header>
 
                     <main role="main" className="inner cover">
-                        <a href="/us" title="Learn more about us...">
+                        <Link to="/us" title="Learn more about us...">
                             <img
                                 id="house"
                                 src={house}
                                 alt="Click here to enter..."
                                 className="img-responsive img-rounded"
                             />
-                        </a>
+                        </Link>
                         <p className="lead">
                             We are sisters, who share prayer, work, laughter and struggles,
                             <br />
                             and live according to the Form of Life drawn up by St Clare of Assisi in 1253.
                         </p>
                         <p className="lead">
-                            <a href="/us">Learn more about us...</a>
+                            <Link to="/us">Learn more about us...</Link>
                         </p>
                     </main>
 
