@@ -7,10 +7,13 @@ type Props = RouteComponentProps<{}>;
 export class Main extends React.Component<Props> {
     public render() {
         return (
-            <Switch>
-                <Route path="/us" component={Us} />
-                <Redirect to="/" />
-            </Switch>
+            <div>
+                MENU HERE
+                <Switch>
+                    <Route path="/us" component={Us} />
+                    <Redirect to="/" />
+                </Switch>
+            </div>
         );
     }
 }
