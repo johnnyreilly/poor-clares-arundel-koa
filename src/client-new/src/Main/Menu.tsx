@@ -30,14 +30,14 @@ export class Menu extends React.Component<{}, typeof initialState> {
 
     render() {
         return (
-            <Navbar color="light" light expand="md">
+            <Navbar dark className="bg-primary" expand="md">
                 <Container>
                     <NavbarBrand href="/us">Poor Clares</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav>Our Life</DropdownToggle>
+                                <DropdownToggle nav caret>Our Life</DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
                                         <Link to="/us">Us</Link>
@@ -61,7 +61,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav>Community</DropdownToggle>
+                                <DropdownToggle nav caret>Community</DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem header>Sister's stories</DropdownItem>
                                     <DropdownItem>
@@ -106,7 +106,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav>Beginnings</DropdownToggle>
+                                <DropdownToggle nav caret>Beginnings</DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
                                         <Link to="/beginningsClaresStory">Clares Story</Link>
@@ -135,7 +135,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                 </Link>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav>Misc</DropdownToggle>
+                                <DropdownToggle nav caret>Misc</DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
                                         <Link to="/miscFAQs">FAQs</Link>
