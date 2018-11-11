@@ -16,7 +16,10 @@ import { Link } from 'react-router-dom';
 import Container from 'reactstrap/lib/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import pdfFile from '../static/Stylist_Life_in_a_convent.pdf';
+import lifeInAConvent from '../static/Stylist_Life_in_a_convent.pdf';
+import communityFoundationsHollington from '../static/communityFoundationsHollington.pdf';
+import tripAroundGuestHouse from '../static/tripAroundGuestHouse.pdf';
+import communityTripAroundHouse from '../static/communityTripAroundHouse.pdf';
 
 const initialState = {
     isOpen: false
@@ -57,10 +60,10 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                         <Link to="/workShop">Our shop</Link>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <Link to="/static/tripAroundGuestHouse.pdf">Trip around the guesthouse</Link>
+                                        <a href={tripAroundGuestHouse}>Trip around the guesthouse</a>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <Link to="/static/communityTripAroundHouse.pdf">Trip around the house</Link>
+                                        <a href={communityTripAroundHouse}>Trip around the house</a>
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
@@ -107,7 +110,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                         <Link to="/communityFoundationsKenya">Kenya</Link>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <Link to="/static/communityFoundationsHollington.pdf">Hollington</Link>
+                                        <a href={communityFoundationsHollington}>Hollington</a>
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
@@ -173,7 +176,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                             </NavItem>
                         </Nav>
                         <Nav className="ml-auto" navbar>
-                            <NavLink href={pdfFile} title="The Stylist magazine wrote an article about us.">
+                            <NavLink href={lifeInAConvent} title="The Stylist magazine wrote an article about us.">
                                 The Stylist
                             </NavLink>
                             <NavItem>
