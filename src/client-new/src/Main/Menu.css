@@ -1,0 +1,16 @@
+.bg-primary {
+    background-color: #faa52d !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    white-space: nowrap !important;
+    color: rgba(255,255,255,.75) !important;
+}
+
+.carousel-container {
+    padding: 0.5rem;
+}
+
+.carousel-container > div {
+    border-radius: 0.3rem;
+}

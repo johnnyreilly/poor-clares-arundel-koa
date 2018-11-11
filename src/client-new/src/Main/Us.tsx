@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
-import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption, Jumbotron } from 'reactstrap';
 import communityAtPrayer from '../images/main/Page2CommunityAtPrayer.jpg';
 import susannaAtPrayer from '../images/main/Page3SusannaAtPrayer.jpg';
 import chapelGroupAtPrayer from '../images/main/Page4ChapelGroupAtPrayer.jpg';
@@ -93,26 +93,29 @@ export class Us extends React.Component<Props, typeof defaultState> {
 
         return (
             <div className="row">
-                <div className="col-lg-6 col-md-7 col-sm-9 col-xs-12">
+                <div className="col-lg-6 col-md-5 col-sm-3 col-xs-12">
+                    <Jumbotron>
+                        <h1 className="display-4">About Us</h1>
+                        <p className="lead">
+                            Called to a life of prayer we seek to live the Gospel in and for our world of today. We
+                            share our lives and all that we do.
+                        </p>
+                        <hr className="my-2" />
+                        <p>We are the Poor Clares of Arundel.</p>
+                        <p className="lead">
+                            <a className="btn btn-primary" href="http://youtu.be/u_RlaYfJGbc">
+                                See a slideshow of us here...
+                            </a>
+                        </p>
+                    </Jumbotron>
+                </div>
+                <div className="col-lg-6 col-md-7 col-sm-9 col-xs-12 carousel-container">
                     <Carousel activeIndex={activeIndex} next={this.next} previous={this.previous}>
                         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
                         {slides}
                         <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
                         <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
                     </Carousel>
-                </div>
-                <div className="col-lg-6 col-md-5 col-sm-3 col-xs-12">
-                    <blockquote className="blockquote-reverse">
-                        <p>"Called to a life of prayer we seek to live the Gospel in and for our world of today.</p>
-
-                        <p>We share our lives and all that we do."</p>
-
-                        <footer>The Poor Clares of Arundel.</footer>
-                    </blockquote>
-
-                    <p>
-                        <a href="http://youtu.be/u_RlaYfJGbc">See a slideshow of us here...</a>
-                    </p>
                 </div>
             </div>
         );
