@@ -9,12 +9,14 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem
+    DropdownItem,
+    NavLink
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Container from 'reactstrap/lib/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import pdfFile from '../static/Stylist_Life_in_a_convent.pdf';
 
 const initialState = {
     isOpen: false
@@ -37,7 +39,9 @@ export class Menu extends React.Component<{}, typeof initialState> {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>Our Life</DropdownToggle>
+                                <DropdownToggle nav caret>
+                                    Our Life
+                                </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
                                         <Link to="/us">Us</Link>
@@ -61,7 +65,9 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>Community</DropdownToggle>
+                                <DropdownToggle nav caret>
+                                    Community
+                                </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem header>Sister's stories</DropdownItem>
                                     <DropdownItem>
@@ -106,7 +112,9 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>Beginnings</DropdownToggle>
+                                <DropdownToggle nav caret>
+                                    Beginnings
+                                </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
                                         <Link to="/beginningsClaresStory">Clares Story</Link>
@@ -135,7 +143,9 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                 </Link>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>Misc</DropdownToggle>
+                                <DropdownToggle nav caret>
+                                    Misc
+                                </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
                                         <Link to="/miscFAQs">FAQs</Link>
@@ -163,15 +173,9 @@ export class Menu extends React.Component<{}, typeof initialState> {
                             </NavItem>
                         </Nav>
                         <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <Link
-                                    className="nav-link"
-                                    to="/static/Stylist_Life_in_a_convent.pdf"
-                                    title="The Stylist magazine wrote an article about us."
-                                >
-                                    The Stylist
-                                </Link>
-                            </NavItem>
+                            <NavLink href={pdfFile} title="The Stylist magazine wrote an article about us.">
+                                The Stylist
+                            </NavLink>
                             <NavItem>
                                 <Link
                                     className="nav-link"
