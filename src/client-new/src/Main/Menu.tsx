@@ -53,13 +53,13 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                         <DropdownItem>
                                             <Link to="/prayerOur">Our prayer</Link>
                                         </DropdownItem>
-                                        <DropdownItem divider />
                                         <DropdownItem>
                                             <Link to="/workOur">Our work</Link>
                                         </DropdownItem>
                                         <DropdownItem>
                                             <Link to="/workShop">Our shop</Link>
                                         </DropdownItem>
+                                        <DropdownItem divider />
                                         <DropdownItem>
                                             <a href={tripAroundGuestHouse}>Trip around the guesthouse</a>
                                         </DropdownItem>

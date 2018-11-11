@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption, Jumbotron } from 'reactstrap';
-import communityAtPrayer from '../images/main/Page2CommunityAtPrayer.jpg';
-import susannaAtPrayer from '../images/main/Page3SusannaAtPrayer.jpg';
-import chapelGroupAtPrayer from '../images/main/Page4ChapelGroupAtPrayer.jpg';
-import groupOnLawn from '../images/main/Page5GroupOnLawn.jpg';
-import yohaanaInLibrary from '../images/main/Page6YohaanaInLibrary.jpg';
-import providenceGroup from '../images/main/Page7ProvidenceGroup.jpg';
+import communityAtPrayer from './images/Page2CommunityAtPrayer.jpg';
+import susannaAtPrayer from './images/Page3SusannaAtPrayer.jpg';
+import chapelGroupAtPrayer from './images/Page4ChapelGroupAtPrayer.jpg';
+import groupOnLawn from './images/Page5GroupOnLawn.jpg';
+import yohaanaInLibrary from './images/Page6YohaanaInLibrary.jpg';
+import providenceGroup from './images/Page7ProvidenceGroup.jpg';
 
 const items = [
     {
