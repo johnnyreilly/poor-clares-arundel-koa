@@ -3,7 +3,6 @@ import prayerOur1 from './images/prayerOur1.jpg';
 import prayerOur2 from './images/prayerOur2.jpg';
 import prayerOur3 from './images/prayerOur3.jpg';
 
-// tslint:disable-next-line:variable-name
 export const PrayerOur: React.SFC = _props => (
     <>
         <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur2} />
