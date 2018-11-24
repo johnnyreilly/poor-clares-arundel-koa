@@ -11,7 +11,9 @@ import vestments4 from './images/vestments4.jpg';
 import vestments5 from './images/vestments5.jpg';
 import tripAroundGuestHouse from '../static/tripAroundGuestHouse.pdf';
 
-export const WorkOur: React.SFC = _props => (
+export const ourWorkPath = '/our-work';
+
+export const OurWork: React.SFC = _props => (
     <>
         <Card className="float-right">
             <CardImg top src={workSrMariaIcon} />

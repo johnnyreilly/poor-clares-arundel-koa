@@ -21,6 +21,9 @@ import communityFoundationsHollington from '../static/communityFoundationsHollin
 import tripAroundGuestHouse from '../static/tripAroundGuestHouse.pdf';
 import communityTripAroundHouse from '../static/communityTripAroundHouse.pdf';
 import './Menu.css';
+import { ourPrayerPath } from './OurPrayer';
+import { ourShopPath } from './OurShop';
+import { ourWorkPath } from './OurWork';
 
 const initialState = {
     isOpen: false
@@ -51,13 +54,13 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem>
-                                            <Link to="/prayerOur">Our prayer</Link>
+                                            <Link to={ourPrayerPath}>Our prayer</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/workOur">Our work</Link>
+                                            <Link to={ourWorkPath}>Our work</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/workShop">Our shop</Link>
+                                            <Link to={ourShopPath}>Our shop</Link>
                                         </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem>

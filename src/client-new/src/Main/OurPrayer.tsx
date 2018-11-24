@@ -3,7 +3,9 @@ import prayerOur1 from './images/prayerOur1.jpg';
 import prayerOur2 from './images/prayerOur2.jpg';
 import prayerOur3 from './images/prayerOur3.jpg';
 
-export const PrayerOur: React.SFC = _props => (
+export const ourPrayerPath = '/our-prayer';
+
+export const OurPrayer: React.SFC = _props => (
     <>
         <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur2} />
         <h3>Our Prayer</h3>
