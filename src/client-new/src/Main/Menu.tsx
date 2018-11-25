@@ -21,9 +21,9 @@ import communityFoundationsHollington from '../static/communityFoundationsHollin
 import tripAroundGuestHouse from '../static/tripAroundGuestHouse.pdf';
 import communityTripAroundHouse from '../static/communityTripAroundHouse.pdf';
 import './Menu.css';
-import { ourPrayerPath } from './OurPrayer';
-import { ourShopPath } from './OurShop';
-import { ourWorkPath } from './OurWork';
+import { ourPrayerPath } from './our-life/OurPrayer';
+import { ourShopPath } from './our-life/OurShop';
+import { ourWorkPath } from './our-life/OurWork';
 
 const initialState = {
     isOpen: false

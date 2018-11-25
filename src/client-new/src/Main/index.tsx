@@ -3,9 +3,9 @@ import { Container } from 'reactstrap';
 import { Route, RouteComponentProps, Switch, Redirect } from 'react-router-dom';
 import { Menu } from './Menu';
 import { Us } from './Us';
-import { OurPrayer, ourPrayerPath } from './OurPrayer';
-import { OurWork } from './OurWork';
-import { ourShopPath } from './OurShop';
+import { OurPrayer, ourPrayerPath } from './our-life/OurPrayer';
+import { OurWork } from './our-life/OurWork';
+import { ourShopPath } from './our-life/OurShop';
 
 type Props = RouteComponentProps<{}>;
 
