@@ -24,6 +24,7 @@ import './Menu.css';
 import { ourPrayerPath } from './our-life/OurPrayer';
 import { ourShopPath } from './our-life/OurShop';
 import { ourWorkPath } from './our-life/OurWork';
+import { sisterAnnPath } from './community/SisterAnn';
 
 const initialState = {
     isOpen: false
@@ -78,7 +79,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                     <DropdownMenu right>
                                         <DropdownItem header>Sister's stories</DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communitySistersAnn">Sister Ann</Link>
+                                            <Link to={sisterAnnPath}>Sister Ann</Link>
                                         </DropdownItem>
                                         <DropdownItem>
                                             <Link to="/communitySistersClareAgnes">Sister Clare Agnes</Link>

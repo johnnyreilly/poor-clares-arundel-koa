@@ -9,7 +9,7 @@ import vestments2 from './images/vestments2.jpg';
 import vestments3 from './images/vestments3.jpg';
 import vestments4 from './images/vestments4.jpg';
 import vestments5 from './images/vestments5.jpg';
-import tripAroundGuestHouse from '../static/tripAroundGuestHouse.pdf';
+import tripAroundGuestHouse from '../../static/tripAroundGuestHouse.pdf';
 
 export const ourWorkPath = '/our-work';
 
