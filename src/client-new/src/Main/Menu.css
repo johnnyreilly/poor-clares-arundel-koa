@@ -10,6 +10,7 @@
 
 .bg-primary {
     background-color: #faa52d !important;
+    margin-bottom: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {

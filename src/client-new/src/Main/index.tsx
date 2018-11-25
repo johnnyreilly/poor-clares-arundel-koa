@@ -7,6 +7,13 @@ import { OurPrayer, ourPrayerPath } from './our-life/OurPrayer';
 import { OurWork, ourWorkPath } from './our-life/OurWork';
 import { OurShop, ourShopPath } from './our-life/OurShop';
 import { SisterAnn, sisterAnnPath } from './community/SisterAnn';
+import { SisterClareAgnes, sisterClareAgnesPath } from './community/SisterClareAgnes';
+import { SisterClareRuva, sisterClareRuvaPath } from './community/SisterClareRuva';
+import { SisterGabriel, sisterGabrielPath } from './community/SisterGabriel';
+import { SisterGraca, sisterGracaPath } from './community/SisterGraca';
+import { SisterJoseph, sisterJosephPath } from './community/SisterJoseph';
+import { SisterMaria, sisterMariaPath } from './community/SisterMaria';
+import { Interviews, interviewsPath } from './community/Interviews';
 
 type Props = RouteComponentProps<{}>;
 
@@ -22,6 +29,13 @@ export class Main extends React.Component<Props> {
                         <Route path={ourWorkPath} component={OurWork} />
                         <Route path={ourShopPath} component={OurShop} />
                         <Route path={sisterAnnPath} component={SisterAnn} />
+                        <Route path={sisterClareAgnesPath} component={SisterClareAgnes} />
+                        <Route path={sisterClareRuvaPath} component={SisterClareRuva} />
+                        <Route path={sisterGabrielPath} component={SisterGabriel} />
+                        <Route path={sisterGracaPath} component={SisterGraca} />
+                        <Route path={sisterJosephPath} component={SisterJoseph} />
+                        <Route path={sisterMariaPath} component={SisterMaria} />
+                        <Route path={interviewsPath} component={Interviews} />
                         <Redirect to="/" />
                     </Switch>
                 </Container>

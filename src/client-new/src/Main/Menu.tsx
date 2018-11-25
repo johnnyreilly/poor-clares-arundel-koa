@@ -25,6 +25,13 @@ import { ourPrayerPath } from './our-life/OurPrayer';
 import { ourShopPath } from './our-life/OurShop';
 import { ourWorkPath } from './our-life/OurWork';
 import { sisterAnnPath } from './community/SisterAnn';
+import { sisterClareAgnesPath } from './community/SisterClareAgnes';
+import { sisterClareRuvaPath } from './community/SisterClareRuva';
+import { sisterGabrielPath } from './community/SisterGabriel';
+import { sisterGracaPath } from './community/SisterGraca';
+import { sisterJosephPath } from './community/SisterJoseph';
+import { sisterMariaPath } from './community/SisterMaria';
+import { interviewsPath } from './community/Interviews';
 
 const initialState = {
     isOpen: false
@@ -82,25 +89,25 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                             <Link to={sisterAnnPath}>Sister Ann</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communitySistersClareAgnes">Sister Clare Agnes</Link>
+                                            <Link to={sisterClareAgnesPath}>Sister Clare Agnes</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communitySistersClareRuva">Sister Clare Ruva</Link>
+                                            <Link to={sisterClareRuvaPath}>Sister Clare Ruva</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communitySistersGabriel">Sister Gabriel</Link>
+                                            <Link to={sisterGabrielPath}>Sister Gabriel</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communitySistersGraca">Sister Graça</Link>
+                                            <Link to={sisterGracaPath}>Sister Graça</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communitySistersJoseph">Sister Joseph</Link>
+                                            <Link to={sisterJosephPath}>Sister Joseph</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communitySistersMaria">Sister Maria</Link>
+                                            <Link to={sisterMariaPath}>Sister Maria</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communityInterviewsWithSisters">Interviews with Sisters</Link>
+                                            <Link to={interviewsPath}>Interviews with Sisters</Link>
                                         </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem>
