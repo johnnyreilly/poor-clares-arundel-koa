@@ -32,6 +32,7 @@ import { sisterGracaPath } from './community/SisterGraca';
 import { sisterJosephPath } from './community/SisterJoseph';
 import { sisterMariaPath } from './community/SisterMaria';
 import { interviewsPath } from './community/Interviews';
+import { arundelPath } from './community/Arundel';
 
 const initialState = {
     isOpen: false
@@ -111,7 +112,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                         </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem>
-                                            <Link to="/communityArundel">Arundel Community</Link>
+                                            <Link to={arundelPath}>Arundel Community</Link>
                                         </DropdownItem>
                                         <DropdownItem>
                                             <Link to="/communityVocation">Vocation</Link>
