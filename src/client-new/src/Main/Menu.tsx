@@ -36,6 +36,9 @@ import { arundelPath } from './community/Arundel';
 import { claresStoryPath } from './beginnings/ClaresStory';
 import { claresThoughtsPath } from './beginnings/ClaresThoughts';
 import { claresPrayersPath } from './beginnings/ClaresPrayers';
+import { francisLifePath } from './beginnings/FrancisLife';
+import { francisThoughtsPath } from './beginnings/FrancisThoughts';
+import { francisPrayersPath } from './beginnings/FrancisPrayers';
 
 const initialState = {
     isOpen: false
@@ -146,13 +149,13 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                         </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem>
-                                            <Link to="/beginningsFrancisLife">Francis Life</Link>
+                                            <Link to={francisLifePath}>Francis Life</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/beginningsFrancisThoughts">Francis Thoughts</Link>
+                                            <Link to={francisThoughtsPath}>Francis Thoughts</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/beginningsFrancisPrayers">Francis Prayers</Link>
+                                            <Link to={francisPrayersPath}>Francis Prayers</Link>
                                         </DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>

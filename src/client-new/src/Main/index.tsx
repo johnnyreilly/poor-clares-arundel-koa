@@ -18,6 +18,9 @@ import { Arundel, arundelPath } from './community/Arundel';
 import { ClaresStory, claresStoryPath } from './beginnings/ClaresStory';
 import { ClaresThoughts, claresThoughtsPath } from './beginnings/ClaresThoughts';
 import { ClaresPrayers, claresPrayersPath } from './beginnings/ClaresPrayers';
+import { FrancisLife, francisLifePath } from './beginnings/FrancisLife';
+import { FrancisThoughts, francisThoughtsPath } from './beginnings/FrancisThoughts';
+import { FrancisPrayers, francisPrayersPath } from './beginnings/FrancisPrayers';
 
 type Props = RouteComponentProps<{}>;
 
@@ -44,6 +47,9 @@ export class Main extends React.Component<Props> {
                         <Route path={claresStoryPath} component={ClaresStory} />
                         <Route path={claresThoughtsPath} component={ClaresThoughts} />
                         <Route path={claresPrayersPath} component={ClaresPrayers} />
+                        <Route path={francisLifePath} component={FrancisLife} />
+                        <Route path={francisThoughtsPath} component={FrancisThoughts} />
+                        <Route path={francisPrayersPath} component={FrancisPrayers} />
                         <Redirect to="/" />
                     </Switch>
                 </Container>
