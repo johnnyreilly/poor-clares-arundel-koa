@@ -33,6 +33,7 @@ import { sisterJosephPath } from './community/SisterJoseph';
 import { sisterMariaPath } from './community/SisterMaria';
 import { interviewsPath } from './community/Interviews';
 import { arundelPath } from './community/Arundel';
+import { claresStoryPath } from './beginnings/ClaresStory';
 
 const initialState = {
     isOpen: false
@@ -133,7 +134,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem>
-                                            <Link to="/beginningsClaresStory">Clares Story</Link>
+                                            <Link to={claresStoryPath}>Clares Story</Link>
                                         </DropdownItem>
                                         <DropdownItem>
                                             <Link to="/beginningsClaresThoughts">Clares Thoughts</Link>
