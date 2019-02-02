@@ -16,6 +16,8 @@ import { SisterMaria, sisterMariaPath } from './community/SisterMaria';
 import { Interviews, interviewsPath } from './community/Interviews';
 import { Arundel, arundelPath } from './community/Arundel';
 import { ClaresStory, claresStoryPath } from './beginnings/ClaresStory';
+import { ClaresThoughts, claresThoughtsPath } from './beginnings/ClaresThoughts';
+import { ClaresPrayers, claresPrayersPath } from './beginnings/ClaresPrayers';
 
 type Props = RouteComponentProps<{}>;
 
@@ -40,6 +42,8 @@ export class Main extends React.Component<Props> {
                         <Route path={interviewsPath} component={Interviews} />
                         <Route path={arundelPath} component={Arundel} />
                         <Route path={claresStoryPath} component={ClaresStory} />
+                        <Route path={claresThoughtsPath} component={ClaresThoughts} />
+                        <Route path={claresPrayersPath} component={ClaresPrayers} />
                         <Redirect to="/" />
                     </Switch>
                 </Container>
