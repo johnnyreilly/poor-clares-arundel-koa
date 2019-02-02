@@ -40,6 +40,7 @@ import { francisLifePath } from './beginnings/FrancisLife';
 import { francisThoughtsPath } from './beginnings/FrancisThoughts';
 import { francisPrayersPath } from './beginnings/FrancisPrayers';
 import { eventsPath } from './Events';
+import { faqsPath } from './misc/FAQs';
 
 const initialState = {
     isOpen: false
@@ -171,7 +172,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem>
-                                            <Link to="/miscFAQs">FAQs</Link>
+                                            <Link to={faqsPath}>FAQs</Link>
                                         </DropdownItem>
                                         <DropdownItem>
                                             <Link to="/miscLinks">Links</Link>
