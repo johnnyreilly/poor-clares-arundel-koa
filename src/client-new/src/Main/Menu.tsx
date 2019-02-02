@@ -39,6 +39,7 @@ import { claresPrayersPath } from './beginnings/ClaresPrayers';
 import { francisLifePath } from './beginnings/FrancisLife';
 import { francisThoughtsPath } from './beginnings/FrancisThoughts';
 import { francisPrayersPath } from './beginnings/FrancisPrayers';
+import { eventsPath } from './Events';
 
 const initialState = {
     isOpen: false
@@ -160,7 +161,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 <NavItem>
-                                    <Link className="nav-link" to="/events">
+                                    <Link className="nav-link" to={eventsPath}>
                                         Events
                                     </Link>
                                 </NavItem>
@@ -186,11 +187,6 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                 <NavItem>
                                     <Link className="nav-link" to="/prayerRequests">
                                         Prayer Requests
-                                    </Link>
-                                </NavItem>
-                                <NavItem>
-                                    <Link className="nav-link" to="/events">
-                                        Events
                                     </Link>
                                 </NavItem>
                             </Nav>

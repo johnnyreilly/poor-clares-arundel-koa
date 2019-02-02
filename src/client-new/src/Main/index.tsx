@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Container } from 'reactstrap';
 import { Route, RouteComponentProps, Switch, Redirect } from 'react-router-dom';
 import { Menu } from './Menu';
-import { Us } from './Us';
+import { Us, usPath } from './Us';
 import { OurPrayer, ourPrayerPath } from './our-life/OurPrayer';
 import { OurWork, ourWorkPath } from './our-life/OurWork';
 import { OurShop, ourShopPath } from './our-life/OurShop';
@@ -21,6 +21,7 @@ import { ClaresPrayers, claresPrayersPath } from './beginnings/ClaresPrayers';
 import { FrancisLife, francisLifePath } from './beginnings/FrancisLife';
 import { FrancisThoughts, francisThoughtsPath } from './beginnings/FrancisThoughts';
 import { FrancisPrayers, francisPrayersPath } from './beginnings/FrancisPrayers';
+import { Events, eventsPath } from './Events';
 
 type Props = RouteComponentProps<{}>;
 
@@ -31,7 +32,7 @@ export class Main extends React.Component<Props> {
                 <Menu />
                 <Container>
                     <Switch>
-                        <Route path="/us" component={Us} />
+                        <Route path={usPath} component={Us} />
                         <Route path={ourPrayerPath} component={OurPrayer} />
                         <Route path={ourWorkPath} component={OurWork} />
                         <Route path={ourShopPath} component={OurShop} />
@@ -50,6 +51,7 @@ export class Main extends React.Component<Props> {
                         <Route path={francisLifePath} component={FrancisLife} />
                         <Route path={francisThoughtsPath} component={FrancisThoughts} />
                         <Route path={francisPrayersPath} component={FrancisPrayers} />
+                        <Route path={eventsPath} component={Events} />
                         <Redirect to="/" />
                     </Switch>
                 </Container>

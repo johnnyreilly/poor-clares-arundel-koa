@@ -35,6 +35,8 @@ const items = [
     }
 ];
 
+export const usPath = '/us';
+
 type Props = RouteComponentProps<{}>;
 
 const defaultState = { activeIndex: 0 };
