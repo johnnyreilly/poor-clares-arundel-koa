@@ -41,6 +41,9 @@ import { francisThoughtsPath } from './beginnings/FrancisThoughts';
 import { francisPrayersPath } from './beginnings/FrancisPrayers';
 import { eventsPath } from './Events';
 import { faqsPath } from './misc/FAQs';
+import { linksPath } from './misc/Links';
+import { glossaryPath } from './misc/Glossary';
+import { addressesPath } from './misc/Addresses';
 
 const initialState = {
     isOpen: false
@@ -175,13 +178,13 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                             <Link to={faqsPath}>FAQs</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/miscLinks">Links</Link>
+                                            <Link to={linksPath}>Links</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/miscGlossary">Glossary</Link>
+                                            <Link to={glossaryPath}>Glossary</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/miscAddressesPoorClareConvents">Addresses</Link>
+                                            <Link to={addressesPath}>Addresses</Link>
                                         </DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>

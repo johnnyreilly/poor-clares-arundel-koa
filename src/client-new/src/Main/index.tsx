@@ -23,6 +23,9 @@ import { FrancisThoughts, francisThoughtsPath } from './beginnings/FrancisThough
 import { FrancisPrayers, francisPrayersPath } from './beginnings/FrancisPrayers';
 import { Events, eventsPath } from './Events';
 import { FAQs, faqsPath } from './misc/FAQs';
+import { Links, linksPath } from './misc/Links';
+import { Glossary, glossaryPath } from './misc/Glossary';
+import { Addresses, addressesPath } from './misc/Addresses';
 
 type Props = RouteComponentProps<{}>;
 
@@ -54,6 +57,9 @@ export class Main extends React.Component<Props> {
                         <Route path={francisPrayersPath} component={FrancisPrayers} />
                         <Route path={eventsPath} component={Events} />
                         <Route path={faqsPath} component={FAQs} />
+                        <Route path={linksPath} component={Links} />
+                        <Route path={glossaryPath} component={Glossary} />
+                        <Route path={addressesPath} component={Addresses} />
                         <Redirect to="/" />
                     </Switch>
                 </Container>
