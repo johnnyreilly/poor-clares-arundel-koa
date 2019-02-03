@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardImg, CardBody } from 'reactstrap';
+import { Card, CardImg, CardBody, CardText } from 'reactstrap';
 import stFrancis from './images/StFrancis.jpg';
 import sanDamianoCrucifix from './images/SanDamianoCrucifix.jpg';
 import theBible from './images/TheBible.jpg';
@@ -10,7 +10,7 @@ export const FrancisLife: React.SFC = _props => (
     <>
         <Card className="float-right">
             <CardImg top src={stFrancis} />
-            <CardBody>St Francis</CardBody>
+            <CardBody><CardText>St Francis</CardText></CardBody>
         </Card>
 
         <h3>St Francis of Assisi – His Life</h3>
@@ -41,7 +41,7 @@ export const FrancisLife: React.SFC = _props => (
 
         <Card className="float-left">
             <CardImg top src={sanDamianoCrucifix} />
-            <CardBody>San Damiano Crucifix</CardBody>
+            <CardBody><CardText>San Damiano Crucifix</CardText></CardBody>
         </Card>
 
         <p>
@@ -67,7 +67,7 @@ export const FrancisLife: React.SFC = _props => (
 
         <Card className="float-right">
             <CardImg top src={theBible} />
-            <CardBody>The Bible</CardBody>
+            <CardBody><CardText>The Bible</CardText></CardBody>
         </Card>
 
         <p>

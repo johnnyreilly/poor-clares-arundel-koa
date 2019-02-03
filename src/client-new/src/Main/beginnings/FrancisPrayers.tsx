@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardImg, CardBody } from 'reactstrap';
+import { Card, CardImg, CardBody, CardText } from 'reactstrap';
 import statue from './images/Statue.jpg';
 
 export const francisPrayersPath = '/beginnings-francis-prayers';
@@ -8,7 +8,7 @@ export const FrancisPrayers: React.SFC = _props => (
     <>
         <Card className="float-right">
             <CardImg top src={statue} />
-            <CardBody>St Francis the Poor Man of God</CardBody>
+            <CardBody><CardText>St Francis the Poor Man of God</CardText></CardBody>
         </Card>
 
         <h3>St Francis of Assisi – His Prayers</h3>

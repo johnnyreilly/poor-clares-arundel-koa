@@ -45,6 +45,7 @@ import { linksPath } from './misc/Links';
 import { glossaryPath } from './misc/Glossary';
 import { addressesPath } from './misc/Addresses';
 import { vocationPath } from './community/Vocation';
+import { kenyaPath } from './community/Kenya';
 
 const initialState = {
     isOpen: false
@@ -132,7 +133,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                         <DropdownItem divider />
                                         <DropdownItem header>Foundations</DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communityFoundationsKenya">Kenya</Link>
+                                            <Link to={kenyaPath}>Kenya</Link>
                                         </DropdownItem>
                                         <DropdownItem>
                                             <a href={communityFoundationsHollington}>Hollington</a>
