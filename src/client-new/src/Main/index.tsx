@@ -28,6 +28,7 @@ import { Glossary, glossaryPath } from './misc/Glossary';
 import { Addresses, addressesPath } from './misc/Addresses';
 import { Vocation, vocationPath } from './community/Vocation';
 import { Kenya, kenyaPath } from './community/Kenya';
+import { PrayerRequests, prayerRequestsPath } from './PrayerRequests';
 
 type Props = RouteComponentProps<{}>;
 
@@ -64,6 +65,7 @@ export class Main extends React.Component<Props> {
                         <Route path={linksPath} component={Links} />
                         <Route path={glossaryPath} component={Glossary} />
                         <Route path={addressesPath} component={Addresses} />
+                        <Route path={prayerRequestsPath} component={PrayerRequests} />
                         <Redirect to="/" />
                     </Switch>
                 </Container>

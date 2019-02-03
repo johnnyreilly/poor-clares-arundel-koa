@@ -46,6 +46,7 @@ import { glossaryPath } from './misc/Glossary';
 import { addressesPath } from './misc/Addresses';
 import { vocationPath } from './community/Vocation';
 import { kenyaPath } from './community/Kenya';
+import { prayerRequestsPath } from './PrayerRequests';
 
 const initialState = {
     isOpen: false
@@ -191,7 +192,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 <NavItem>
-                                    <Link className="nav-link" to="/prayerRequests">
+                                    <Link className="nav-link" to={prayerRequestsPath}>
                                         Prayer Requests
                                     </Link>
                                 </NavItem>
