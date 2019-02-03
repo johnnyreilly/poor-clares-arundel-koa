@@ -44,6 +44,7 @@ import { faqsPath } from './misc/FAQs';
 import { linksPath } from './misc/Links';
 import { glossaryPath } from './misc/Glossary';
 import { addressesPath } from './misc/Addresses';
+import { vocationPath } from './community/Vocation';
 
 const initialState = {
     isOpen: false
@@ -126,7 +127,7 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                             <Link to={arundelPath}>Arundel Community</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to="/communityVocation">Vocation</Link>
+                                            <Link to={vocationPath}>Vocation</Link>
                                         </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem header>Foundations</DropdownItem>

@@ -26,6 +26,7 @@ import { FAQs, faqsPath } from './misc/FAQs';
 import { Links, linksPath } from './misc/Links';
 import { Glossary, glossaryPath } from './misc/Glossary';
 import { Addresses, addressesPath } from './misc/Addresses';
+import { Vocation, vocationPath } from './community/Vocation';
 
 type Props = RouteComponentProps<{}>;
 
@@ -47,6 +48,7 @@ export class Main extends React.Component<Props> {
                         <Route path={sisterGracaPath} component={SisterGraca} />
                         <Route path={sisterJosephPath} component={SisterJoseph} />
                         <Route path={sisterMariaPath} component={SisterMaria} />
+                        <Route path={vocationPath} component={Vocation} />
                         <Route path={interviewsPath} component={Interviews} />
                         <Route path={arundelPath} component={Arundel} />
                         <Route path={claresStoryPath} component={ClaresStory} />
