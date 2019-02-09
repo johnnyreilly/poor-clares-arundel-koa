@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardImg, CardBody, CardText, Jumbotron } from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 import ionaComingInDoor from './images/IonaComingInDoor.jpg';
 
 export const homePath = '/home';
