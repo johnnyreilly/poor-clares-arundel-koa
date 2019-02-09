@@ -1,12 +1,21 @@
 import * as React from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import { Card, CardImg, CardBody, CardText, Jumbotron } from 'reactstrap';
+import ionaComingInDoor from './images/IonaComingInDoor.jpg';
 
-type Props = RouteComponentProps<{}>;
+export const homePath = '/home';
 
-export class Home extends React.Component<Props> {
-    public render() {
-        return (
-            <p>The Convent home</p>
-        );
-    }
-}
+export const Home: React.SFC = _props => (
+    <>
+        <Jumbotron>
+            <h2>"The Convent"</h2>
+
+            <p>A mini-site dedicated to the television programme "The Convent".</p>
+
+            <img src={ionaComingInDoor} alt="© Tiger Aspect Productions" className="img-thumbnail img-responsive" />
+
+            <p />
+            <p>Iona arrives...</p>
+        </Jumbotron>
+        <footer>Photos in the 'Convent' site by members of the TV crew.</footer>
+    </>
+);

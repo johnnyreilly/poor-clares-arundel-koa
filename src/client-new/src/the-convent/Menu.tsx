@@ -3,58 +3,61 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
-    NavLink
+    DropdownItem
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Container from 'reactstrap/lib/Container';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import lifeInAConvent from '../static/Stylist_Life_in_a_convent.pdf';
-import communityFoundationsHollington from '../static/communityFoundationsHollington.pdf';
-import tripAroundGuestHouse from '../static/tripAroundGuestHouse.pdf';
-import communityTripAroundHouse from '../static/communityTripAroundHouse.pdf';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+// import lifeInAConvent from '../static/Stylist_Life_in_a_convent.pdf';
+// import communityFoundationsHollington from '../static/communityFoundationsHollington.pdf';
+// import tripAroundGuestHouse from '../static/tripAroundGuestHouse.pdf';
+// import communityTripAroundHouse from '../static/communityTripAroundHouse.pdf';
 import './Menu.css';
-import { ourPrayerPath } from './our-life/OurPrayer';
-import { ourShopPath } from './our-life/OurShop';
-import { ourWorkPath } from './our-life/OurWork';
-import { sisterAnnPath } from './community/SisterAnn';
-import { sisterClareAgnesPath } from './community/SisterClareAgnes';
-import { sisterClareRuvaPath } from './community/SisterClareRuva';
-import { sisterGabrielPath } from './community/SisterGabriel';
-import { sisterGracaPath } from './community/SisterGraca';
-import { sisterJosephPath } from './community/SisterJoseph';
-import { sisterMariaPath } from './community/SisterMaria';
-import { interviewsPath } from './community/Interviews';
-import { arundelPath } from './community/Arundel';
-import { claresStoryPath } from './beginnings/ClaresStory';
-import { claresThoughtsPath } from './beginnings/ClaresThoughts';
-import { claresPrayersPath } from './beginnings/ClaresPrayers';
-import { francisLifePath } from './beginnings/FrancisLife';
-import { francisThoughtsPath } from './beginnings/FrancisThoughts';
-import { francisPrayersPath } from './beginnings/FrancisPrayers';
-import { eventsPath } from './Events';
-import { faqsPath } from './misc/FAQs';
-import { linksPath } from './misc/Links';
-import { glossaryPath } from './misc/Glossary';
-import { addressesPath } from './misc/Addresses';
-import { vocationPath } from './community/Vocation';
-import { kenyaPath } from './community/Kenya';
-import { prayerRequestsPath } from './PrayerRequests';
-import { theConventPath } from '../the-convent';
-import { usPath } from './Us';
+// import { ourPrayerPath } from './our-life/OurPrayer';
+// import { ourShopPath } from './our-life/OurShop';
+// import { ourWorkPath } from './our-life/OurWork';
+// import { sisterAnnPath } from './community/SisterAnn';
+// import { sisterClareAgnesPath } from './community/SisterClareAgnes';
+// import { sisterClareRuvaPath } from './community/SisterClareRuva';
+// import { sisterGabrielPath } from './community/SisterGabriel';
+// import { sisterGracaPath } from './community/SisterGraca';
+// import { sisterJosephPath } from './community/SisterJoseph';
+// import { sisterMariaPath } from './community/SisterMaria';
+// import { interviewsPath } from './community/Interviews';
+// import { arundelPath } from './community/Arundel';
+// import { claresStoryPath } from './beginnings/ClaresStory';
+// import { claresThoughtsPath } from './beginnings/ClaresThoughts';
+// import { claresPrayersPath } from './beginnings/ClaresPrayers';
+// import { francisLifePath } from './beginnings/FrancisLife';
+// import { francisThoughtsPath } from './beginnings/FrancisThoughts';
+// import { francisPrayersPath } from './beginnings/FrancisPrayers';
+// import { faqsPath } from './misc/FAQs';
+// import { linksPath } from './misc/Links';
+// import { glossaryPath } from './misc/Glossary';
+// import { addressesPath } from './misc/Addresses';
+// import { vocationPath } from './community/Vocation';
+// import { kenyaPath } from './community/Kenya';
+// import { prayerRequestsPath } from './PrayerRequests';
+// import { theConventPath } from '../the-convent';
+import { whyPath } from './Why';
+import { usPath } from 'src/main/Us';
+import { angelaPath } from './seekers/Angela';
+
+interface IProps {
+    conventRootPath: string;
+}
 
 const initialState = {
     isOpen: false
 };
 
-export class Menu extends React.Component<{}, typeof initialState> {
+export class Menu extends React.Component<IProps, typeof initialState> {
     state = initialState;
 
     toggle = () =>
@@ -63,40 +66,42 @@ export class Menu extends React.Component<{}, typeof initialState> {
         }));
 
     render() {
+        const { conventRootPath } = this.props;
         return (
             <>
-                <div className="header-image header-image-main" />
+                <div className="header-image header-image-the-convent" />
 
                 <Navbar dark className="bg-primary" expand="md">
                     <Container>
-                        <Link className="navbar-brand" to={usPath}>Poor Clares</Link>
+                        <Link to={conventRootPath} className="navbar-brand">The Convent</Link>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="mr-auto" navbar>
+                                <NavItem>
+                                    <Link className="nav-link" to={`${conventRootPath}${whyPath}`}>
+                                        Why
+                                    </Link>
+                                </NavItem>
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
-                                        Our Life
+                                        Seekers
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem>
-                                            <Link to={ourPrayerPath}>Our prayer</Link>
+                                            <Link to={`${conventRootPath}${angelaPath}`}>Angela</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to={ourWorkPath}>Our work</Link>
+                                            <Link to={`${conventRootPath}${angelaPath}`}>Debi</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <Link to={ourShopPath}>Our shop</Link>
-                                        </DropdownItem>
-                                        <DropdownItem divider />
-                                        <DropdownItem>
-                                            <a href={tripAroundGuestHouse}>Trip around the guesthouse</a>
+                                            <Link to={`${conventRootPath}${angelaPath}`}>Iona</Link>
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <a href={communityTripAroundHouse}>Trip around the house</a>
+                                            <Link to={`${conventRootPath}${angelaPath}`}>Vik</Link>
                                         </DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
-                                <UncontrolledDropdown nav inNavbar>
+                                {/* <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
                                         Community
                                     </DropdownToggle>
@@ -169,11 +174,6 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                         </DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
-                                <NavItem>
-                                    <Link className="nav-link" to={eventsPath}>
-                                        Events
-                                    </Link>
-                                </NavItem>
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
                                         Misc
@@ -197,25 +197,13 @@ export class Menu extends React.Component<{}, typeof initialState> {
                                     <Link className="nav-link" to={prayerRequestsPath}>
                                         Prayer Requests
                                     </Link>
-                                </NavItem>
+                                </NavItem> */}
                             </Nav>
                             <Nav className="ml-auto" navbar>
-                                <NavLink href={lifeInAConvent} title="The Stylist magazine wrote an article about us.">
-                                    The Stylist
-                                </NavLink>
                                 <NavItem>
-                                    <Link
-                                        className="nav-link"
-                                        to={theConventPath}
-                                        title="The BBC made a television programme about us."
-                                    >
-                                        The Convent
+                                    <Link className="nav-link" to="/">
+                                        Back to main site
                                     </Link>
-                                </NavItem>
-                                <NavItem>
-                                    <a className="nav-link" href="https://www.facebook.com/poorclaresarundel">
-                                        <FontAwesomeIcon icon={faFacebook} />
-                                    </a>
                                 </NavItem>
                             </Nav>
                         </Collapse>
