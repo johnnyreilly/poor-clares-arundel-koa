@@ -70,7 +70,7 @@ ${prayFor}`
 
         ctx.body = {
             success: false,
-            text: 'Your prayer request has not been sent - please try mailing: ' + '_props.PrayerRequestEmailAddress'
+            text: `Your prayer request has not been sent - please try mailing: ${prayerRequestFromEmail}`
         };
     }
 });

@@ -13,7 +13,8 @@
     "install:client": "cd src/client && yarn",
     "install:server": "cd src/server && yarn",
     "postinstall": "run-s install:client install:server",
-    "start": "cd src/server && yarn start"
+    "start": "cd src/server && yarn start",
+    "start:client": "cd src/client-new && yarn start"
   },
   "main": "dist/index.js",
   "repository": "https://github.com/johnnyreilly/poor-clares-arundel-koa.git",

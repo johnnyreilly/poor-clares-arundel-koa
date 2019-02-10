@@ -1,19 +1,25 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
+    "target": "es5",
     "lib": [
       "dom",
-      "es2015",
-      "es2016"
+      "dom.iterable",
+      "esnext"
     ],
-    "module": "es2015",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
     "moduleResolution": "node",
-    "noEmitOnError": false,
-    "noImplicitAny": true,
-    "preserveConstEnums": true,
-    "removeComments": false,
-    "suppressImplicitAnyIndexErrors": true,
-    "target": "es2015"
-  }
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "src"
+  ]
 }
