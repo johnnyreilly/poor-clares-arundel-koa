@@ -4,8 +4,7 @@
 FROM node:10.4 AS build-client
 WORKDIR /client
 
-# COPY src/client/package.json src/client/yarn.lock ./
-COPY src/client/package.json ./
+COPY src/client/package.json src/client/yarn.lock ./
 RUN yarn --network-timeout 100000
 # RUN npm install --verbose
 
@@ -32,7 +31,7 @@ FROM node:10.4 AS runtime
 ENV NODE_ENV production
 
 WORKDIR /app
-COPY --from=build-client client/dist ./client/dist
+COPY --from=build-client client/build ./client/build
 COPY --from=build-server server/dist ./dist
 COPY --from=build-server server/package.json server/yarn.lock ./
 RUN yarn --network-timeout 100000

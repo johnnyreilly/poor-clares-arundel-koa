@@ -1,10 +1,10 @@
 ﻿# Poor Clares Arundel [![Build Status](https://travis-ci.org/johnnyreilly/poor-clares-arundel-koa.svg?branch=master)](https://travis-ci.org/johnnyreilly/poor-clares-arundel-koa)
 
-The Poor Clares of Arundel's website - the source of: http://www.poorclaresarundel.org/
+The Poor Clares of Arundel's website - the source of: https://www.poorclaresarundel.org/
 
 To my knowledge this is the first Convent with Continuous Deployment.
 
-Built on Angular 1.x and Koa.
+Built with React and Koa.
 
 ## Developing
 
@@ -12,20 +12,19 @@ To run locally you can `docker-compose up`; remember to update `docker-compose.y
 
 You can debug the server in VS Code by hitting F5.
 
-Before you do that either:
+Before you do that remember to build:
 
 ```
-cd src/client
-yarn watch
+yarn build:client
 ```
 
-or
+If you want to debug the client then:
 
 ```
-cd src/client
-yarn build
+cd src/client-new
+yarn start
 ```
 
 ## Licence
 
-Copyright © 2014 [John Reilly](twitter.com/johnny_reilly). This project is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
+Copyright © 2014- [John Reilly](twitter.com/johnny_reilly). This project is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
