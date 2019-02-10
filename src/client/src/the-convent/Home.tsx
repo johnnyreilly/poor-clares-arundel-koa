@@ -11,7 +11,7 @@ export const Home: React.SFC = _props => (
 
             <p>A mini-site dedicated to the television programme "The Convent".</p>
 
-            <img src={ionaComingInDoor} alt="© Tiger Aspect Productions" className="img-thumbnail img-responsive" />
+            <img src={ionaComingInDoor} alt="© Tiger Aspect Productions" className="img-thumbnail img-fluid" />
 
             <p />
             <p>Iona arrives...</p>

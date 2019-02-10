@@ -14,9 +14,7 @@ import { GuidedPrayer, guidedPrayerPath } from './GuidedPrayer';
 
 type Props = RouteComponentProps<{}>;
 
-export const theConventPath = 'the-convent';
-
-export class TheConvent extends React.Component<Props> {
+export default class TheConvent extends React.Component<Props> {
     public render() {
         const conventRootPath = this.props.match.path;
         return (

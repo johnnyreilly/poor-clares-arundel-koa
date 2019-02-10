@@ -32,7 +32,7 @@ import { PrayerRequests, prayerRequestsPath } from './PrayerRequests';
 
 type Props = RouteComponentProps<{}>;
 
-export class Main extends React.Component<Props> {
+export default class Main extends React.Component<Props> {
     public render() {
         return (
             <>

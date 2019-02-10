@@ -21,7 +21,7 @@ yarn build:client
 If you want to debug the client then:
 
 ```
-cd src/client-new
+cd src/client
 yarn start
 ```
 

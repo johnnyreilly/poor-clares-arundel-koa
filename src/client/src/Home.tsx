@@ -23,7 +23,7 @@ export class Home extends React.Component {
                                 id="house"
                                 src={house}
                                 alt="Click here to enter..."
-                                className="img-responsive img-rounded"
+                                className="img-fluid img-rounded"
                             />
                         </Link>
                         <p className="lead">

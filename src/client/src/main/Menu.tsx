@@ -46,8 +46,9 @@ import { addressesPath } from './misc/Addresses';
 import { vocationPath } from './community/Vocation';
 import { kenyaPath } from './community/Kenya';
 import { prayerRequestsPath } from './PrayerRequests';
-import { theConventPath } from '../the-convent';
 import { usPath } from './Us';
+
+const theConventPath = 'the-convent';
 
 const initialState = {
     isOpen: false
