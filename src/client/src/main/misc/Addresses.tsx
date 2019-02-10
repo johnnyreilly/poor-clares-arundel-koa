@@ -62,14 +62,6 @@ export const Addresses: React.SFC = _props => (
             Scotland
         </address>
 
-        <h4>Lynton</h4>
-        <address>
-            <strong>Monastery of Poor Clares</strong><br />
-            Lynton<br />
-            N.Devon<br />
-            EX35 6BX
-        </address>
-
         <h4>York</h4>
         <address>
             <strong>Poor Clares Monastery</strong><br />

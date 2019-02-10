@@ -1,7 +1,9 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import prayerOur1 from './images/prayerOur1.jpg';
 import prayerOur2 from './images/prayerOur2.jpg';
 import prayerOur3 from './images/prayerOur3.jpg';
+import { prayerRequestsPath } from '../PrayerRequests';
 
 export const ourPrayerPath = '/our-prayer';
 
@@ -99,9 +101,7 @@ export const OurPrayer: React.SFC = _props => (
 
         <h3>Prayer Requests</h3>
 
-        <p>If you would like to ask the community to pray for a special intention mail us a prayer request:</p>
-
-        {/* <div ng-include="'templates/main/prayerRequest.html'"></div> */}
+        <p>If you would like to ask the community to pray for a special intention <Link to={prayerRequestsPath}>mail us a prayer request</Link>.</p>
 
         <p>Although you may only receive a standardised reply, you can be confident that we will indeed pray.</p>
     </>

@@ -74,12 +74,5 @@ export const Links: React.SFC = _props => (
                 www.sanctiangeli.org
             </a>
         </p>
-
-        <h4>Information about the Catholic Faith</h4>
-        <p>
-            <a href="http://www.life4seekers.co.uk" target="_blank">
-                www.life4seekers.co.uk
-            </a>
-        </p>
     </>
 );
