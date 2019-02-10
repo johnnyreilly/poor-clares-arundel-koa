@@ -942,7 +942,7 @@
     "@svgr/core" "^2.4.1"
     loader-utils "^1.1.0"
 
-"@types/history@*":
+"@types/history@*", "@types/history@^4.7.2":
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.2.tgz#0e670ea254d559241b6eeb3894f8754991e73220"
   integrity sha512-ui3WwXmjTaY73fOQ3/m3nnajU/Orhi6cEu5rzX+BrAAJxa3eITXZ5ch9suPqtM03OWhAHhPSyBGCN4UKoxO20Q==
@@ -963,6 +963,13 @@
   integrity sha512-Jp4ufcEEjVJEB0OHq2MCZcE1u3KYUKO6WnSuiU/tZeYeiZxUoQavfa/TZeiIT+1XoN6l0lQVNM30VINZFDeolQ==
   dependencies:
     "@types/react" "*"
+
+"@types/react-ga@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react-ga/-/react-ga-2.3.0.tgz#dbd56dd622cabb5baebc896e3ee67dfdc29babc1"
+  integrity sha512-7Vkv6wH1Kem4vkjuJxRYxDgLfokm0shugDk0W5p9C28POrsPAXezLbgP5C2tyFZ7lKARdyrCxwkdRTC1UV0dHg==
+  dependencies:
+    react-ga "*"
 
 "@types/react-router-dom@^4.3.1":
   version "4.3.1"
@@ -8076,6 +8083,11 @@ react-error-overlay@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.2.tgz#888957b884d4b25b083a82ad550f7aad96585394"
   integrity sha512-7kEBKwU9R8fKnZJBRa5RSIfay4KJwnYvKB6gODGicUmDSAhQJ7Tdnll5S0RLtYrzRfMVXlqYw61rzrSpP4ThLQ==
+
+react-ga@*, react-ga@^2.5.7:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.5.7.tgz#1c80a289004bf84f84c26d46f3a6a6513081bf2e"
+  integrity sha512-UmATFaZpEQDO96KFjB5FRLcT6hFcwaxOmAJZnjrSiFN/msTqylq9G+z5Z8TYzN/dbamDTiWf92m6MnXXJkAivQ==
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
