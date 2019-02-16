@@ -1,4 +1,5 @@
 import * as Koa from 'koa';
+import * as helmet from 'koa-helmet';
 import * as send from 'koa-send';
 import * as serve from 'koa-static';
 import * as path from 'path';
@@ -11,6 +12,7 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 
 const app = new Koa();
 
+app.use(helmet());
 app.use(logger);
 app.use(routes);
 
