@@ -12,7 +12,12 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 
 const app = new Koa();
 
-app.use(helmet());
+app.use(helmet.contentSecurityPolicy({
+    directives: {
+      // tslint:disable-next-line:quotemark
+      scriptSrc: ["'self'", "'unsafe-inline'", "storage.googleapis.com", "www.google-analytics.com"],
+    }
+  }));
 app.use(logger);
 app.use(routes);
 
