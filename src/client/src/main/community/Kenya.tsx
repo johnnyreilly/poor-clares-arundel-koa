@@ -3,7 +3,7 @@ import { Card, CardImg, CardBody, CardText } from 'reactstrap';
 import kenyaContractSigning from './images/KenyaContractSigning.jpg';
 import kenyaHomePic from './images/KenyaHomePic.jpg';
 import kenyaHouseChurch from './images/KenyaHouseChurch.jpg';
-import kenyaCommunityAug09 from './images/KenyaCommunityAug09.jpg';
+import kenyaCommunity2019 from './images/KenyaCommunity2019.jpg';
 import africanStClare from './images/AfricanStClare.jpg';
 
 export const kenyaPath = '/community-kenya';
@@ -79,14 +79,27 @@ export const Kenya: React.SFC = _props => (
         <h4>The Community</h4>
 
         <p>
-            The community are 10 in number at present. Three sisters from Arundel, three solemnly professed Kenyans and
-            four novices.
+            The community are 12 in number at present. One sister from Arundel, six solemnly professed Kenyans, one
+            novice and four postulants.
+        </p>
+
+        <p>
+            We are in contact with many young Kenyan women who are beginning the process of discerning whether they are
+            called to Poor Clare life and we pray daily for more young women to join us. Once a young lady has made the
+            decision to start her discernment with us, she has a year outside living in her own environment while she
+            follows a program with a member of the professed community appointed to look after aspirants. The program is
+            designed to gently introduce her to our way of life
+        </p>
+
+        <p>
+            Over the years many sisters from our founding community in Arundel have visited us and they are still
+            closely in contact with us.
         </p>
 
         <Card style={{ maxWidth: '430px' }}>
-            <CardImg top src={kenyaCommunityAug09} />
+            <CardImg top src={kenyaCommunity2019} />
             <CardBody>
-                <CardText>The Community in August 09</CardText>
+                <CardText>The Community in 2019</CardText>
             </CardBody>
         </Card>
 
