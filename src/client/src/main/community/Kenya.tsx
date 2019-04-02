@@ -91,11 +91,6 @@ export const Kenya: React.SFC = _props => (
             designed to gently introduce her to our way of life
         </p>
 
-        <p>
-            Over the years many sisters from our founding community in Arundel have visited us and they are still
-            closely in contact with us.
-        </p>
-
         <Card style={{ maxWidth: '430px' }}>
             <CardImg top src={kenyaCommunity2019} />
             <CardBody>
@@ -104,9 +99,8 @@ export const Kenya: React.SFC = _props => (
         </Card>
 
         <p>
-            We are in contact with many young Kenyan women who are beginning the process of discerning whether they are
-            called to Poor Clare life and we pray daily for more young women to join us. Over the years many sisters
-            from our parent community in Arundel have visited us.
+            Over the years many sisters from our founding community in Arundel have visited us and they are still
+            closely in contact with us.
         </p>
 
         <Card className="float-right">
