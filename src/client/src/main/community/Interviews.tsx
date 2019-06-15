@@ -11,25 +11,25 @@ export const Interviews: React.SFC = _props => (
         <h4>Sister Pat</h4>
 
         <div className="embed-responsive embed-responsive-16by9">
-            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/Z13ZVI5ZARw" allowFullScreen />
+            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/Z13ZVI5ZARw" allowFullScreen title="Sister Pat inverview" />
         </div>
 
         <h4>Sister Gabriel</h4>
 
         <div className="embed-responsive embed-responsive-16by9">
-            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/4wwaRR4jnuc" allowFullScreen />
+            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/4wwaRR4jnuc" allowFullScreen title="Sister Gabriel inverview" />
         </div>
 
         <h4>Sister Angela</h4>
 
         <div className="embed-responsive embed-responsive-16by9">
-            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/RCWEawlX4Tc" allowFullScreen />
+            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/RCWEawlX4Tc" allowFullScreen title="Sister Angela inverview" />
         </div>
 
         <h4>Sister Aelred</h4>
 
         <div className="embed-responsive embed-responsive-16by9">
-            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/qpXROehsm48" allowFullScreen />
+            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/qpXROehsm48" allowFullScreen title="Sister Aelred inverview" />
         </div>
     </>
 );

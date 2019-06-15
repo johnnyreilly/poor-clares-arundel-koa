@@ -61,13 +61,13 @@ export const Arundel: React.SFC = _props => (
         <div className="row">
             <div className="col-xs-6 col-md-2">
                 <div className="thumbnail text-center">
-                    <img src={motherAbbessAgnesGasquet} />
+                    <img src={motherAbbessAgnesGasquet} alt="Mother Abbess Agnes Gasquet" />
                     <div className="caption">Mother Abbess Agnes Gasquet</div>
                 </div>
             </div>
             <div className="col-xs-6 col-md-2">
                 <div className="thumbnail text-center">
-                    <img src={motherClareCampbell} />
+                    <img src={motherClareCampbell} alt="Mother Clare Campbell" />
                     <div className="caption">Mother Clare Campbell</div>
                 </div>
             </div>
@@ -93,13 +93,13 @@ export const Arundel: React.SFC = _props => (
         <div className="row">
             <div className="col-xs-6 col-md-2">
                 <div className="thumbnail text-center">
-                    <img src={motherAustinGibson} />
+                    <img src={motherAustinGibson} alt="Mother Austin Gibson" />
                     <div className="caption">Mother Austin Gibson</div>
                 </div>
             </div>
             <div className="col-xs-6 col-md-2">
                 <div className="thumbnail text-center">
-                    <img src={motherCampionFleet} />
+                    <img src={motherCampionFleet} alt="Mother Campion Fleet" />
                     <div className="caption">Mother Campion Fleet</div>
                 </div>
             </div>
