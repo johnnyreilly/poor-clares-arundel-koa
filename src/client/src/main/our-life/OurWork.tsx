@@ -59,17 +59,17 @@ export const OurWork: React.SFC = _props => (
         <div className="row">
             <div className="col-md-4">
                 <div className="thumbnail">
-                    <img src={work1} />
+                    <img src={work1} alt="" />
                 </div>
             </div>
             <div className="col-md-4">
                 <div className="thumbnail">
-                    <img src={work2} />
+                    <img src={work2} alt="" />
                 </div>
             </div>
             <div className="col-md-4">
                 <div className="thumbnail">
-                    <img src={work3} />
+                    <img src={work3} alt="" />
                 </div>
             </div>
         </div>
@@ -82,27 +82,27 @@ export const OurWork: React.SFC = _props => (
         <div className="row">
             <div className="col-md-2">
                 <div className="thumbnail">
-                    <img src={vestments1} />
+                    <img src={vestments1} alt="Vestment" />
                 </div>
             </div>
             <div className="col-md-3">
                 <div className="thumbnail">
-                    <img src={vestments2} />
+                    <img src={vestments2} alt="Vestment" />
                 </div>
             </div>
             <div className="col-md-3">
                 <div className="thumbnail">
-                    <img src={vestments3} />
+                    <img src={vestments3} alt="Vestment" />
                 </div>
             </div>
             <div className="col-md-2">
                 <div className="thumbnail">
-                    <img src={vestments4} />
+                    <img src={vestments4} alt="Vestment" />
                 </div>
             </div>
             <div className="col-md-2">
                 <div className="thumbnail">
-                    <img src={vestments5} />
+                    <img src={vestments5} alt="Vestment" />
                 </div>
             </div>
         </div>

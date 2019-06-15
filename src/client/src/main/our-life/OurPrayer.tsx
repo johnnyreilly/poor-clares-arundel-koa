@@ -9,7 +9,7 @@ export const ourPrayerPath = '/our-prayer';
 
 export const OurPrayer: React.SFC = _props => (
     <>
-        <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur2} />
+        <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur2} alt="" />
         <h3>Our Prayer</h3>
 
         <p>Our life of prayer falls into three natural parts. These are:</p>
@@ -30,7 +30,7 @@ export const OurPrayer: React.SFC = _props => (
             private moments throughout the day.
         </p>
 
-        <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur3} />
+        <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur3} alt="" />
         <h3>Our usual timetable</h3>
 
         <ul>
@@ -67,7 +67,7 @@ export const OurPrayer: React.SFC = _props => (
             space, each praying alone.
         </p>
 
-        <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur1} />
+        <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur1} alt="" />
         <h3>Holy Mass</h3>
 
         <p>

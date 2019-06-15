@@ -73,12 +73,12 @@ export class PrayerRequests extends React.Component<{}, typeof initialState> {
 
                 {message && (
                     <Alert color={message.success ? 'success' : 'danger'}>
-                        <img className="img-thumbnail" src={smalltau} />
+                        <img className="img-thumbnail" src={smalltau} alt={message.success ? 'success' : 'failure'} />
                         {message.text}
                     </Alert>
                 )}
 
-                <form name="form" noValidate role="form" onSubmit={this.handleSubmit}>
+                <form name="form" noValidate onSubmit={this.handleSubmit}>
                     <div
                         className={`form-group has-feedback ${formSubmitAttempted && !requestEmail ? 'has-error' : ''}`}
                     >
