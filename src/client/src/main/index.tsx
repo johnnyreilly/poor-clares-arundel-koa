@@ -32,44 +32,42 @@ import { PrayerRequests, prayerRequestsPath } from './PrayerRequests';
 
 type Props = RouteComponentProps<{}>;
 
-export default class Main extends React.Component<Props> {
-    public render() {
-        return (
-            <>
-                <Menu />
-                <Container>
-                    <Switch>
-                        <Route path={usPath} component={Us} />
-                        <Route path={ourPrayerPath} component={OurPrayer} />
-                        <Route path={ourWorkPath} component={OurWork} />
-                        <Route path={ourShopPath} component={OurShop} />
-                        <Route path={sisterAnnPath} component={SisterAnn} />
-                        <Route path={sisterClareAgnesPath} component={SisterClareAgnes} />
-                        <Route path={sisterClareRuvaPath} component={SisterClareRuva} />
-                        <Route path={sisterGabrielPath} component={SisterGabriel} />
-                        <Route path={sisterGracaPath} component={SisterGraca} />
-                        <Route path={sisterJosephPath} component={SisterJoseph} />
-                        <Route path={sisterMariaPath} component={SisterMaria} />
-                        <Route path={vocationPath} component={Vocation} />
-                        <Route path={interviewsPath} component={Interviews} />
-                        <Route path={arundelPath} component={Arundel} />
-                        <Route path={kenyaPath} component={Kenya} />
-                        <Route path={claresStoryPath} component={ClaresStory} />
-                        <Route path={claresThoughtsPath} component={ClaresThoughts} />
-                        <Route path={claresPrayersPath} component={ClaresPrayers} />
-                        <Route path={francisLifePath} component={FrancisLife} />
-                        <Route path={francisThoughtsPath} component={FrancisThoughts} />
-                        <Route path={francisPrayersPath} component={FrancisPrayers} />
-                        <Route path={eventsPath} component={Events} />
-                        <Route path={faqsPath} component={FAQs} />
-                        <Route path={linksPath} component={Links} />
-                        <Route path={glossaryPath} component={Glossary} />
-                        <Route path={addressesPath} component={Addresses} />
-                        <Route path={prayerRequestsPath} component={PrayerRequests} />
-                        <Redirect to="/" />
-                    </Switch>
-                </Container>
-            </>
-        );
-    }
-}
+const Main: React.FC<Props> = props => (
+    <>
+        <Menu location={props.location.pathname} />
+        <Container>
+            <Switch>
+                <Route path={usPath} component={Us} />
+                <Route path={ourPrayerPath} component={OurPrayer} />
+                <Route path={ourWorkPath} component={OurWork} />
+                <Route path={ourShopPath} component={OurShop} />
+                <Route path={sisterAnnPath} component={SisterAnn} />
+                <Route path={sisterClareAgnesPath} component={SisterClareAgnes} />
+                <Route path={sisterClareRuvaPath} component={SisterClareRuva} />
+                <Route path={sisterGabrielPath} component={SisterGabriel} />
+                <Route path={sisterGracaPath} component={SisterGraca} />
+                <Route path={sisterJosephPath} component={SisterJoseph} />
+                <Route path={sisterMariaPath} component={SisterMaria} />
+                <Route path={vocationPath} component={Vocation} />
+                <Route path={interviewsPath} component={Interviews} />
+                <Route path={arundelPath} component={Arundel} />
+                <Route path={kenyaPath} component={Kenya} />
+                <Route path={claresStoryPath} component={ClaresStory} />
+                <Route path={claresThoughtsPath} component={ClaresThoughts} />
+                <Route path={claresPrayersPath} component={ClaresPrayers} />
+                <Route path={francisLifePath} component={FrancisLife} />
+                <Route path={francisThoughtsPath} component={FrancisThoughts} />
+                <Route path={francisPrayersPath} component={FrancisPrayers} />
+                <Route path={eventsPath} component={Events} />
+                <Route path={faqsPath} component={FAQs} />
+                <Route path={linksPath} component={Links} />
+                <Route path={glossaryPath} component={Glossary} />
+                <Route path={addressesPath} component={Addresses} />
+                <Route path={prayerRequestsPath} component={PrayerRequests} />
+                <Redirect to="/" />
+            </Switch>
+        </Container>
+    </>
+);
+
+export default Main;

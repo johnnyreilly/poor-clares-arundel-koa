@@ -54,8 +54,18 @@ const initialState = {
     isOpen: false
 };
 
-export class Menu extends React.Component<{}, typeof initialState> {
+type Props = { location: string; } 
+
+export class Menu extends React.Component<Props, typeof initialState> {
     state = initialState;
+
+    componentDidUpdate(prevProps: Props) {
+        if (this.props.location !== prevProps.location) {
+            this.setState(() => ({
+                isOpen: false
+            }));
+        }
+      }
 
     toggle = () =>
         this.setState(() => ({
