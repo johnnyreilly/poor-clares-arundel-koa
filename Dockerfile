@@ -1,7 +1,7 @@
 ##
 ## IMAGE: build-client
 ##
-FROM node:10.4 AS build-client
+FROM node:10.16.3 AS build-client
 WORKDIR /client
 
 COPY src/client/package.json src/client/yarn.lock ./
