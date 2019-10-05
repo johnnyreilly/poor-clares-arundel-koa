@@ -8,7 +8,13 @@ Built with React and Koa.
 
 ## Developing
 
-To run locally you can `docker-compose up`; remember to update `docker-compose.yml` with variables.
+### Docker
+
+To build with docker: `docker build --tag poorclaresarundel .`
+
+To run then `docker-compose up`; remember to update `docker-compose.yml` with variables.
+
+### Locally
 
 You can debug the server in VS Code by hitting F5.
 
