@@ -30,14 +30,6 @@ export const Events: React.SFC = _props => (
 
         <p>11th August: 8.30am Mass of St Clare</p>
 
-        <p>But in 2019, as 11th August falls on a Sunday, we will celebrate St Clare on the Monday.</p>
-
-        <h5>Solemnity of St Clare - 2019</h5>
-
-        <p>11th August: Transitus with 1st Vespers: 5.30pm. Followed by supper with the community</p>
-
-        <p>12th August: 8.30am Mass of St Clare</p>
-
         <Card className="float-right">
             <CardImg top src={stFrancis} />
         </Card>
@@ -54,27 +46,9 @@ export const Events: React.SFC = _props => (
 
         <p>Mass of the Lord’s Supper: 6.30pm</p>
 
-        <p>
-            In accordance with the Church's ancient tradition, of giving to the poor on Holy Thursday, we invite you to
-            bring something from the following list. Gifts will be carried up in the offertory procession and will be
-            given to a local food bank afterwards.
-        </p>
-
         <Card className="float-right">
             <CardImg top src={strewnCross} />
         </Card>
-
-        <ul>
-            <li>Tinned meat and fish</li>
-            <li>pasta sauces</li>
-            <li>tea</li>
-            <li>coffee</li>
-            <li>jam</li>
-            <li>packets of soup</li>
-            <li>toilet rolls</li>
-        </ul>
-
-        <p>Thank you for your generosity.</p>
 
         <h6>Good Friday</h6>
 
@@ -99,7 +73,7 @@ export const Events: React.SFC = _props => (
 
         <p>1st Vespers: 5.30pm</p>
 
-        <p>Office of Readings and blessing of the Crib: 11.15pm</p>
+        <p>Blessing of the Crib and Midnight Mass: 11.15pm</p>
 
         <Card className="float-right">
             <CardImg top src={crib} />
