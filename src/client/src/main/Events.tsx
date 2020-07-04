@@ -33,6 +33,10 @@ export const Events: React.SFC = (_props) => (
 
         <h5>Solemnity of St Clare</h5>
 
+        <p>10th August, Transitus with 1st Vespers: 5.30pm. Followed by supper with the community</p>
+
+        <p>11th August: 8.30am Mass of St Clare</p>
+
         <Card className="float-right">
             <CardImg top src={stFrancis} />
         </Card>
