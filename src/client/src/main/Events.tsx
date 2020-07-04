@@ -9,9 +9,18 @@ import taize from './images/Taize.png';
 
 export const eventsPath = '/events';
 
-export const Events: React.SFC = _props => (
+export const Events: React.SFC = (_props) => (
     <>
         <h3>Events</h3>
+
+        <h4>Covid 19</h4>
+
+        <p>We are sorry but for the present our Chapel and guest house remain closed to the public.</p>
+
+        <p>
+            Morning and Evening Prayer are live-streamed on Facebook most days as a way of sharing our lives and liturgy
+            while we cannot invite anyone to join us physically. We keep you in our prayers.
+        </p>
 
         <h4>Annual Events</h4>
         <p>Come and join us for these events which take place throughout the year!</p>
@@ -23,12 +32,6 @@ export const Events: React.SFC = _props => (
         </Card>
 
         <h5>Solemnity of St Clare</h5>
-
-        <p>Usually we celebrate St Clare on:</p>
-
-        <p>10th August, Transitus with 1st Vespers: 5.30pm. Followed by supper with the community</p>
-
-        <p>11th August: 8.30am Mass of St Clare</p>
 
         <Card className="float-right">
             <CardImg top src={stFrancis} />
