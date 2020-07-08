@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Debug server",
             "preLaunchTask": "server build",
             "program": "${workspaceFolder}/src/server/server/index.ts",
             "cwd": "${workspaceFolder}",

@@ -6,12 +6,7 @@
         {
             "label": "server build",
             "type": "typescript",
-            "tsconfig": "src\\server\\tsconfig.json",
-            "options": {
-				"shell": {
-					"executable": "powershell.exe"
-				}
-			},
+            "tsconfig": "src/server/tsconfig.json",
             "problemMatcher": [
                 "$tsc"
             ],
@@ -23,13 +18,8 @@
         {
             "label": "server watch",
             "type": "typescript",
-            "tsconfig": "src\\server\\tsconfig.json",
+            "tsconfig": "src/server/tsconfig.json",
             "option": "watch",
-            "options": {
-				"shell": {
-					"executable": "powershell.exe"
-				}
-			},
             "isBackground": true,
             "group": {
                 "kind": "build",
