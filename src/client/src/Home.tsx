@@ -43,7 +43,7 @@ export class Home extends React.Component {
                                 <br /> Convent of Poor Clares, Crossbush, Arundel, BN18 9PJ
                             </p>
                             <p>
-                                <a href="mailto:poorclarescrossbusharundel@hotmail.co.uk">
+                                <a href="mailto:arundel.poorclares@gmail.com">
                                     <FontAwesomeIcon icon={faEnvelope} /> poorclarescrossbusharundel@hotmail.co.uk
                                 </a>{' '}
                                 <a href="https://www.facebook.com/poorclaresarundel">
