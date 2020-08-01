@@ -44,7 +44,7 @@ export class Home extends React.Component {
                             </p>
                             <p>
                                 <a href="mailto:arundel.poorclares@gmail.com">
-                                    <FontAwesomeIcon icon={faEnvelope} /> poorclarescrossbusharundel@hotmail.co.uk
+                                    <FontAwesomeIcon icon={faEnvelope} /> arundel.poorclares@gmail.com
                                 </a>{' '}
                                 <a href="https://www.facebook.com/poorclaresarundel">
                                     <FontAwesomeIcon icon={faFacebook} /> Facebook
