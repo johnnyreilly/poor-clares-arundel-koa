@@ -5,7 +5,7 @@ import theConventDebiRecipe from './images/TheConventDebiRecipe.jpg';
 
 export const debiPath = '/debi';
 
-export const Debi: React.SFC = _props => (
+export const Debi: React.FC = _props => (
     <>
         <Card className="float-right">
             <CardImg top src={seekerDebi} />

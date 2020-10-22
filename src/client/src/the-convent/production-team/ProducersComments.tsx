@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export const producersCommentsPath = '/producers-comments';
 
-export const ProducerComments: React.SFC = _props => (
+export const ProducerComments: React.FC = _props => (
     <>
         <h3>A view from the Executive Producer, John Blake</h3>
 

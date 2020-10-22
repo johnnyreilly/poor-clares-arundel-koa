@@ -6,7 +6,7 @@ import chapel from './images/Chapel.jpg';
 
 export const vocationPath = '/community-vocation';
 
-export const Vocation: React.SFC = _props => (
+export const Vocation: React.FC = _props => (
     <>
         <h3>Vocation</h3>
 

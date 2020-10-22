@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export const linksPath = '/misc-links';
 
-export const Links: React.SFC = _props => (
+export const Links: React.FC = _props => (
     <>
         <h3>Links</h3>
 
@@ -52,16 +52,6 @@ export const Links: React.SFC = _props => (
         </p>
 
         <h4>Vocations</h4>
-        <p>
-            <a href="http://www.vocationsgroup.org.uk" target="_blank" rel="noopener noreferrer">
-                www.vocationsgroup.org.uk
-            </a>
-        </p>
-        <p>
-            <a href="http://www.godknowswhere.org.uk" target="_blank" rel="noopener noreferrer">
-                www.godknowswhere.org.uk
-            </a>
-        </p>
         <p>
             <a href="http://www.ukvocation.org" target="_blank" rel="noopener noreferrer">
                 www.ukvocation.org
