@@ -53,16 +53,6 @@ export const Links: React.SFC = _props => (
 
         <h4>Vocations</h4>
         <p>
-            <a href="http://www.vocationsgroup.org.uk" target="_blank" rel="noopener noreferrer">
-                www.vocationsgroup.org.uk
-            </a>
-        </p>
-        <p>
-            <a href="http://www.godknowswhere.org.uk" target="_blank" rel="noopener noreferrer">
-                www.godknowswhere.org.uk
-            </a>
-        </p>
-        <p>
             <a href="http://www.ukvocation.org" target="_blank" rel="noopener noreferrer">
                 www.ukvocation.org
             </a>

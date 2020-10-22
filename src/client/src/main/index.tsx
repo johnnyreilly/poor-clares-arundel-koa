@@ -29,6 +29,7 @@ import { Addresses, addressesPath } from './misc/Addresses';
 import { Vocation, vocationPath } from './community/Vocation';
 import { Kenya, kenyaPath } from './community/Kenya';
 import { PrayerRequests, prayerRequestsPath } from './PrayerRequests';
+import { LightForTheWorld, lightForTheWorldPath } from './LightForTheWorld';
 
 type Props = RouteComponentProps<{}>;
 
@@ -64,6 +65,7 @@ const Main: React.FC<Props> = props => (
                 <Route path={glossaryPath} component={Glossary} />
                 <Route path={addressesPath} component={Addresses} />
                 <Route path={prayerRequestsPath} component={PrayerRequests} />
+                <Route path={lightForTheWorldPath} component={LightForTheWorld} />
                 <Redirect to="/" />
             </Switch>
         </Container>

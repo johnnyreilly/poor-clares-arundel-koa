@@ -9,13 +9,13 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavLink
+    // NavLink
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Container from 'reactstrap/lib/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import lifeInAConvent from '../static/Stylist_Life_in_a_convent.pdf';
+// import lifeInAConvent from '../static/Stylist_Life_in_a_convent.pdf';
 import communityFoundationsHollington from '../static/communityFoundationsHollington.pdf';
 import tripAroundGuestHouse from '../static/tripAroundGuestHouse.pdf';
 import communityTripAroundHouse from '../static/communityTripAroundHouse.pdf';
@@ -46,9 +46,11 @@ import { addressesPath } from './misc/Addresses';
 import { vocationPath } from './community/Vocation';
 import { kenyaPath } from './community/Kenya';
 import { prayerRequestsPath } from './PrayerRequests';
-import { usPath } from './Us';
+// import { usPath } from './Us';
+import { lightForTheWorldPath } from './LightForTheWorld';
+import { homePath } from '../the-convent/Home';
 
-const theConventPath = 'the-convent';
+// const theConventPath = 'the-convent';
 
 const initialState = {
     isOpen: false
@@ -79,7 +81,7 @@ export class Menu extends React.Component<Props, typeof initialState> {
 
                 <Navbar dark className="bg-primary" expand="md">
                     <Container>
-                        <Link className="navbar-brand" to={usPath}>Poor Clares</Link>
+                        <Link className="navbar-brand" to={homePath}>Poor Clares</Link>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="mr-auto" navbar>
@@ -210,7 +212,7 @@ export class Menu extends React.Component<Props, typeof initialState> {
                                 </NavItem>
                             </Nav>
                             <Nav className="ml-auto" navbar>
-                                <NavLink href={lifeInAConvent} title="The Stylist magazine wrote an article about us.">
+                                {/* <NavLink href={lifeInAConvent} title="The Stylist magazine wrote an article about us.">
                                     The Stylist
                                 </NavLink>
                                 <NavItem>
@@ -221,6 +223,20 @@ export class Menu extends React.Component<Props, typeof initialState> {
                                     >
                                         The Convent
                                     </Link>
+                                </NavItem> */}
+                                <NavItem>
+                                    <Link
+                                        className="nav-link"
+                                        to={lightForTheWorldPath}
+                                        title="We made an album..."
+                                    >
+                                        Light for the World
+                                    </Link>
+                                </NavItem>
+                                <NavItem>
+                                    <a className="nav-link" href="https://youtu.be/URlqwrgphRc">
+                                        The Convent
+                                    </a>
                                 </NavItem>
                                 <NavItem>
                                     <a className="nav-link" href="https://www.facebook.com/poorclaresarundel">
