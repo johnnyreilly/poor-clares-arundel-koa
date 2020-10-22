@@ -9,7 +9,7 @@ import taize from './images/Taize.png';
 
 export const eventsPath = '/events';
 
-export const Events: React.SFC = (_props) => (
+export const Events: React.FC = (_props) => (
     <>
         <h3>Events</h3>
 

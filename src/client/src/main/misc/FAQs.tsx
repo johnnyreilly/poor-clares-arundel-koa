@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export const faqsPath = '/misc-faqs';
 
-export const FAQs: React.SFC = _props => (
+export const FAQs: React.FC = _props => (
     <>
         <h3>FAQs</h3>
 

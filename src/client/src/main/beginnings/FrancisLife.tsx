@@ -6,7 +6,7 @@ import theBible from './images/TheBible.jpg';
 
 export const francisLifePath = '/beginnings-francis-life';
 
-export const FrancisLife: React.SFC = _props => (
+export const FrancisLife: React.FC = _props => (
     <>
         <Card className="float-right">
             <CardImg top src={stFrancis} />

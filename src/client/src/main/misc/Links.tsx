@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export const linksPath = '/misc-links';
 
-export const Links: React.SFC = _props => (
+export const Links: React.FC = _props => (
     <>
         <h3>Links</h3>
 
