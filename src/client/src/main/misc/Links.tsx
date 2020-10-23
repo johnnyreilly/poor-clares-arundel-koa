@@ -58,11 +58,11 @@ export const Links: React.FC = _props => (
             </a>
         </p>
 
-        <h4>Icons</h4>
+        {/* <h4>Icons</h4>
         <p>
             <a href="http://www.sanctiangeli.org" target="_blank" rel="noopener noreferrer">
                 www.sanctiangeli.org
             </a>
-        </p>
+        </p> */}
     </>
 );
