@@ -24,7 +24,7 @@ export const LightForTheWorld: React.FC = _props => (
         </p>
 
         <p>
-            We will be able to sell our CD from 4th of November. 
+            We will be able to sell our CD from 9th of November. 
             We are selling the CD for £10 plus postage and packaging.  
             Contact us at <a href="mailto:arundel.poorclares@gmail.com">
                 <FontAwesomeIcon icon={faEnvelope} /> arundel.poorclares@gmail.com
