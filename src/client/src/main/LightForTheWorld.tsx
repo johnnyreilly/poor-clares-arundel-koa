@@ -1,5 +1,5 @@
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 import { Card, CardImg } from 'reactstrap';
@@ -20,16 +20,16 @@ export const LightForTheWorld: React.FC = _props => (
         </p>
 
         <p>        
-            <a href="https://PCOA.lnk.to/LightForTheWorldSo">Have a taster of our beautiful music here.</a>
+            <a href="https://PCOA.lnk.to/LightForTheWorldSo">Buy our beautiful music here.</a>
         </p>
 
-        <p>
+        {/* <p>
             We will be able to sell our CD from 4th of November. 
             We are selling the CD for £10 plus postage and packaging.  
             Contact us at <a href="mailto:arundel.poorclares@gmail.com">
                 <FontAwesomeIcon icon={faEnvelope} /> arundel.poorclares@gmail.com
             </a> for more details.
-        </p>
+        </p> */}
 
         <p>
             <a href="https://www.youtube.com/watch?v=zs5rGW-RE38">
