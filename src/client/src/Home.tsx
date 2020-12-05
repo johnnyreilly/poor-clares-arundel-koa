@@ -5,6 +5,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import house from './images/house.jpg';
 import lightForTheWorldSmall from './images/light-for-the-world-small.jpg';
+import oComeEmmanuelSmall from './images/o-come-emmanuel-small.jpg';
 import './Home.css';
 
 export class Home extends React.Component {
@@ -19,14 +20,26 @@ export class Home extends React.Component {
                     </header>
 
                     <main role="main" className="inner cover">
-                        <Link to="/light-for-the-world" title="We made an album...">
-                            <img
-                                id="light-of-the-world"
-                                src={lightForTheWorldSmall}
-                                alt="We made an album..."
-                                className="img-fluid img-rounded"
-                            />
-                        </Link>
+                        {new Date().getMonth() !== 11 ? (
+                            <Link to="/light-for-the-world" title="We made an album...">
+                                <img
+                                    id="light-of-the-world"
+                                    src={lightForTheWorldSmall}
+                                    alt="We made an album..."
+                                    className="img-fluid img-rounded"
+                                />
+                            </Link>
+                        ) : (
+                            <Link to="/light-for-the-world" title="We made a Christmas song...">
+                                <img
+                                    id="o-come-emmanuel"
+                                    src={oComeEmmanuelSmall}
+                                    alt="We made an album..."
+                                    className="img-fluid img-rounded"
+                                />
+                            </Link>
+                        )}
+
                         <Link to="/us" title="Learn more about us...">
                             <img
                                 id="house"
