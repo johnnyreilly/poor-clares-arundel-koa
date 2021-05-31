@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import house from './images/house.jpg';
-import lightForTheWorldSmall from './images/light-for-the-world-small.jpg';
-import oComeEmmanuelSmall from './images/o-come-emmanuel-small.jpg';
+// import lightForTheWorldSmall from './images/light-for-the-world-small.jpg';
+// import oComeEmmanuelSmall from './images/o-come-emmanuel-small.jpg';
 import './Home.css';
 
 export class Home extends React.Component {
@@ -20,7 +20,7 @@ export class Home extends React.Component {
                     </header>
 
                     <main role="main" className="inner cover">
-                        {new Date().getMonth() !== 11 ? (
+                        {/* {new Date().getMonth() !== 11 ? (
                             <Link to="/light-for-the-world" title="We made an album...">
                                 <img
                                     id="light-of-the-world"
@@ -38,7 +38,7 @@ export class Home extends React.Component {
                                     className="img-fluid img-rounded"
                                 />
                             </Link>
-                        )}
+                        )} */}
 
                         <Link to="/us" title="Learn more about us...">
                             <img
