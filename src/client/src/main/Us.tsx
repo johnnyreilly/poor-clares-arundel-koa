@@ -2,10 +2,10 @@ import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption, Jumbotron } from 'reactstrap';
 import communityAtPrayer from './images/Page2CommunityAtPrayer.jpg';
-import susannaAtPrayer from './images/Page3SusannaAtPrayer.jpg';
-import chapelGroupAtPrayer from './images/Page4ChapelGroupAtPrayer.jpg';
-import groupOnLawn from './images/Page5GroupOnLawn.jpg';
-import yohaanaInLibrary from './images/Page6YohaanaInLibrary.jpg';
+import prayingInChapel from './images/praying_in_chapel.jpg';
+import coffeeTime from './images/coffee_time.jpg';
+import librarian from './images/librarian.jpg';
+import vegTeam from './images/veg_team.jpg';
 import providenceGroup from './images/Page7ProvidenceGroup.jpg';
 
 const items = [
@@ -14,19 +14,19 @@ const items = [
         caption: 'Called to a life of prayer'
     },
     {
-        src: susannaAtPrayer,
+        src: prayingInChapel,
         caption: 'we seek to live the Gospel'
     },
     {
-        src: chapelGroupAtPrayer,
+        src: coffeeTime,
         caption: 'in and for'
     },
     {
-        src: groupOnLawn,
+        src: librarian,
         caption: 'our world of today.'
     },
     {
-        src: yohaanaInLibrary,
+        src: vegTeam,
         caption: 'We share our lives'
     },
     {
