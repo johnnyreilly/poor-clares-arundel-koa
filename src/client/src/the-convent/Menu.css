@@ -1,5 +1,6 @@
 .header-image {
     background-size: cover;
+    background-position: bottom;
     max-height: 30px;;
     min-height: 150px;
 }
