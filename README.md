@@ -1,4 +1,6 @@
-﻿# Poor Clares Arundel [![Build Status](https://travis-ci.com/johnnyreilly/poor-clares-arundel-koa.svg?branch=master)](https://travis-ci.com/github/johnnyreilly/poor-clares-arundel-koa)
+﻿# Poor Clares Arundel 
+
+[![ci](https://github.com/johnnyreilly/poor-clares-arundel-koa/actions/workflows/deploy.yml/badge.svg)](https://github.com/johnnyreilly/poor-clares-arundel-koa/actions/workflows/deploy.yml)
 
 The Poor Clares of Arundel's website - the source of: https://www.poorclaresarundel.org/
 
