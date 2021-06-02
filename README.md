@@ -22,13 +22,13 @@ You can debug the server in VS Code by hitting F5.
 
 Before you do that remember to build:
 
-```
+```bash
 yarn build:client
 ```
 
 If you want to debug the client then:
 
-```
+```bash
 cd src/client
 yarn start
 ```
