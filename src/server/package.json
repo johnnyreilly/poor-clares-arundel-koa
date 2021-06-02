@@ -23,6 +23,8 @@
     "@types/koa-send": "^4.1.1",
     "@types/koa-static": "^4.0.0",
     "@types/mailgun-js": "^0.22.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
     "cpx": "^1.5.0",
     "cross-env": "^5.2.0",
     "eslint": "^7.1.0",
