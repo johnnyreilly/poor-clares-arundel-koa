@@ -5,7 +5,7 @@ import { config } from './config';
 interface ILogData {
     method: string;
     url: string;
-    query: string;
+    query: any;
     remoteAddress: string;
     host: string;
     userAgent: string;

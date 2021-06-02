@@ -12,12 +12,17 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 
 const app = new Koa();
 
-app.use(helmet.contentSecurityPolicy({
-    directives: {
-      // tslint:disable-next-line:quotemark
-      scriptSrc: ["'self'", "'unsafe-inline'", "storage.googleapis.com", "www.google-analytics.com"],
-    }
-  }));
+app.use(
+    helmet.contentSecurityPolicy(
+        {
+            useDefaults: true,
+            directives: {
+                // tslint:disable-next-line:quotemark
+                scriptSrc: ["'self'", "'unsafe-inline'", 'storage.googleapis.com', 'www.google-analytics.com'],
+            },
+        } as any // see https://github.com/venables/koa-helmet/pull/69
+    )
+);
 app.use(logger);
 app.use(routes);
 
@@ -27,7 +32,7 @@ const publicPath = isDevelopment
 
 const indexHtmlPath = path.join(publicPath, 'index.html');
 app.use(serve(publicPath));
-app.use(async ctx => {
+app.use(async (ctx) => {
     await send(ctx, 'index.html', { root: publicPath });
 });
 
