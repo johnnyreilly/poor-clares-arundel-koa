@@ -4,6 +4,7 @@
   "scripts": {
     "build": "tslint --project . && tsc",
     "postbuild": "cpx \"static-files/**/*\" dist",
+    "lint": "tsc --noEmit && eslint -c .eslintrc.js --ext .ts ./server",
     "start": "node dist/index.js",
     "watch": "cross-env NODE_ENV=development nodemon --watch src/**/* -e ts,tsx --exec ts-node src/server/server.ts"
   },
@@ -22,12 +23,16 @@
     "@types/koa-send": "^4.1.1",
     "@types/koa-static": "^4.0.0",
     "@types/mailgun-js": "^0.16.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
     "cpx": "^1.5.0",
     "cross-env": "^5.2.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
     "nodemon": "^1.18.3",
-    "ts-node": "^7.0.1",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.15.0",
+    "ts-node": "^10.0.0",
     "typescript": "^4.0.1"
   }
 }
