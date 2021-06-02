@@ -17,7 +17,6 @@ app.use(
         {
             useDefaults: true,
             directives: {
-                // tslint:disable-next-line:quotemark
                 scriptSrc: ["'self'", "'unsafe-inline'", 'storage.googleapis.com', 'www.google-analytics.com'],
             },
         } as any // see https://github.com/venables/koa-helmet/pull/69
@@ -38,7 +37,6 @@ app.use(async (ctx) => {
 
 app.listen(config.port);
 
-// tslint:disable-next-line:max-line-length
 console.log(
     `Server running on port ${config.port}; static files served from ${publicPath}, SPA template from ${indexHtmlPath}`
 );

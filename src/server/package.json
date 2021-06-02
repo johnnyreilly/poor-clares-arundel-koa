@@ -2,7 +2,7 @@
   "name": "poor-clares-arundel-koa-server",
   "version": "1.0.0",
   "scripts": {
-    "build": "tslint --project . && tsc",
+    "build": "tsc && eslint -c .eslintrc.js --ext .ts ./server",
     "postbuild": "cpx \"static-files/**/*\" dist",
     "lint": "tsc --noEmit && eslint -c .eslintrc.js --ext .ts ./server",
     "start": "node dist/index.js",
