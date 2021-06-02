@@ -1,4 +1,3 @@
-// tslint:disable:max-line-length
 import * as fs from 'fs';
 import * as koaBody from 'koa-body';
 import * as Router from 'koa-router';
