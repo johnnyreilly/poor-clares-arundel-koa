@@ -5,7 +5,7 @@ import Alert from 'reactstrap/lib/Alert';
 export const prayerRequestsPath = '/prayer-requests';
 
 interface IPrayerRequestResult {
-    success: boolean;
+    ok: boolean;
     text: string;
 }
 
@@ -34,7 +34,7 @@ export class PrayerRequests extends React.Component<{}, typeof initialState> {
         this.setState(() => ({
             formSubmitAttempted: true,
             message: {
-                success: true,
+                ok: true,
                 text: 'Sending...'
             }
         }));
@@ -56,7 +56,7 @@ export class PrayerRequests extends React.Component<{}, typeof initialState> {
         } catch (err) {
             this.setState(() => ({
                 message: {
-                    success: false,
+                    ok: false,
                     text: 'Sorry your prayer request was not sent'
                 }
             }));
@@ -72,8 +72,8 @@ export class PrayerRequests extends React.Component<{}, typeof initialState> {
                 <p>If you would like to ask the community to pray for a special intention mail us a prayer request:</p>
 
                 {message && (
-                    <Alert color={message.success ? 'success' : 'danger'}>
-                        <img className="img-thumbnail" src={smalltau} alt={message.success ? 'success' : 'failure'} />
+                    <Alert color={message.ok ? 'success' : 'danger'}>
+                        <img className="img-thumbnail" src={smalltau} alt={message.ok ? 'success' : 'failure'} />
                         {message.text}
                     </Alert>
                 )}
