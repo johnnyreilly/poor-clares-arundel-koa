@@ -6,7 +6,8 @@ import prayingInChapel from './images/praying_in_chapel.jpg';
 import coffeeTime from './images/coffee_time.jpg';
 import librarian from './images/librarian.jpg';
 import vegTeam from './images/veg_team.jpg';
-import providenceGroup from './images/Page7ProvidenceGroup.jpg';
+import providenceGroup from './images/graca_and_yohanna.jpg';
+import './Us.css';
 
 const items = [
     {
