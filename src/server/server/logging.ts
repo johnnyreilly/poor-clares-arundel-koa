@@ -1,4 +1,3 @@
-
 import * as Koa from 'koa';
 import { config } from './config';
 
@@ -22,17 +21,14 @@ function outputLog(data: Partial<ILogData>, thrownError: any) {
         if (thrownError) {
             console.error(thrownError);
         }
-    }
-    else if (data.statusCode! < 400) {
+    } else if (data.statusCode! < 400) {
         process.stdout.write(JSON.stringify(data) + '\n');
-    }
-    else {
+    } else {
         process.stderr.write(JSON.stringify(data) + '\n');
     }
 }
 
 export async function logger(ctx: Koa.Context, next: () => Promise<any>) {
-
     const start = new Date().getMilliseconds();
 
     const logData: Partial<ILogData> = {
@@ -48,14 +44,18 @@ export async function logger(ctx: Koa.Context, next: () => Promise<any>) {
     try {
         await next();
         logData.statusCode = ctx.status;
-    }
-    catch (e) {
+    } catch (e) {
         errorThrown = e;
-        logData.errorMessage = e.message;
-        logData.errorStack = e.stack;
-        logData.statusCode = e.status || 500;
-        if (e.data) {
-            logData.data = e.data;
+        if (e instanceof Error) {
+            logData.errorMessage = e.message;
+            logData.errorStack = e.stack;
+        }
+
+        if (e instanceof Koa.HttpError) {
+            logData.statusCode = e.status || 500;
+            if (e.data) {
+                logData.data = e.data;
+            }
         }
     }
 
