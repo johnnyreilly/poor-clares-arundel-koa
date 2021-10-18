@@ -65,7 +65,7 @@ ${prayFor}`
 
         ctx.body = { ok: true, text: 'Thanks for sending your prayer request - we will pray.' };
     } catch (exc) {
-        console.error(exc.message);
+        console.error(exc instanceof Error ? exc.message : exc);
 
         ctx.body = {
             success: false,
