@@ -31,18 +31,8 @@ export const Events: React.FC = (_props) => {
         image: [
             crib,
         ],
-        description: `Christmas Eve
-
-1st Vespers: 5.30pm
-
-Blessing of the Crib and Midnight Mass: 11.15pm
-
-Christmas Day
-
-Christmas Morning Mass: 8.30am
-
-Please join us for refreshments afterwards
-`,
+        description: `Christmas Eve - 5.30pm: 1st Vespers, 11.15pm: Blessing of the Crib and Midnight Mass.
+Christmas Day - 8.30am: Christmas Morning Mass, please join us for refreshments afterwards`,
         organizer: {
             '@type': 'CatholicChurch',
             name: 'Convent of Poor Clares',
