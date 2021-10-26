@@ -1,11 +1,14 @@
 import * as React from 'react';
-import { Card, CardImg } from 'reactstrap';
-import stClareStatue from './images/StClareStatue.jpg';
-import stFrancis from './images/StFrancis.jpg';
-import strewnCross from './images/strewnCross.jpg';
-import easterVigil from './images/EasterVigil.jpg';
-import crib from './images/crib.jpg';
-import taize from './images/Taize.png';
+import { Container, Row, Col, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import stClareStatue from '../images/StClareStatue.jpg';
+import stFrancis from '../images/StFrancis.jpg';
+import strewnCross from '../images/strewnCross.jpg';
+import easterVigil from '../images/EasterVigil.jpg';
+import crib from '../images/crib.jpg';
+import taize from '../images/Taize.png';
+import { Link } from 'react-router-dom';
+import { eventsChristmasPath } from './EventsChristmas';
+import { eventsEasterPath } from './EventsEaster';
 
 export const eventsPath = '/events';
 
@@ -28,9 +31,7 @@ export const Events: React.FC = (_props) => {
                 streetAddress: 'Convent of Poor Clares',
             },
         },
-        image: [
-            crib,
-        ],
+        image: [crib],
         description: `Christmas Eve - 5.30pm: 1st Vespers, 11.15pm: Blessing of the Crib and Midnight Mass.
 Christmas Day - 8.30am: Christmas Morning Mass, please join us for refreshments afterwards`,
         organizer: {
@@ -53,6 +54,50 @@ Christmas Day - 8.30am: Christmas Morning Mass, please join us for refreshments 
                 Morning and Evening Prayer are live-streamed on Facebook most days as a way of sharing our lives and
                 liturgy while we cannot invite anyone to join us physically. We keep you in our prayers.
             </p>
+
+            <Container>
+                <Row>
+                    <Col xs="12" md="4">
+                        <Card>
+                            <CardImg top src={crib} alt="picture of a crib" />
+                            <CardBody>
+                                <CardTitle tag="h5">Christmas</CardTitle>
+                                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                                    Annual Christmas Celebrations
+                                </CardSubtitle>
+                                <CardText>Join in our Christmas celebrations!</CardText>
+                                <Link to={eventsChristmasPath}>Learn more</Link>
+                            </CardBody>
+                        </Card>
+                    </Col>
+                    <Col xs="12" md="4">
+                        <Card>
+                            <CardImg top src={strewnCross} alt="picture of a strewn cross" />
+                            <CardBody>
+                                <CardTitle tag="h5">Easter</CardTitle>
+                                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                                    Annual Easter Celebrations
+                                </CardSubtitle>
+                                <CardText>Join in our Easter celebrations!</CardText>
+                                <Link to={eventsEasterPath}>Learn more</Link>
+                            </CardBody>
+                        </Card>
+                    </Col>
+                    <Col xs="12" md="4">
+                        <Card>
+                            <CardImg top src={crib} alt="picture of a crib" />
+                            <CardBody>
+                                <CardTitle tag="h5">Christmas</CardTitle>
+                                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                                    Annual Christmas Celebrations
+                                </CardSubtitle>
+                                <CardText>Join in our Christmas celebrations!</CardText>
+                                <Link to={eventsChristmasPath}>Learn more</Link>
+                            </CardBody>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
 
             <h4>Annual Events</h4>
             <p>Come and join us for these events which take place throughout the year!</p>
@@ -105,24 +150,6 @@ Christmas Day - 8.30am: Christmas Morning Mass, please join us for refreshments 
             <h6>Easter Sunday</h6>
 
             <p>Easter Morning Mass: 8.30am</p>
-
-            <h4>Christmas</h4>
-
-            <h5>Christmas Eve</h5>
-
-            <p>1st Vespers: 5.30pm</p>
-
-            <p>Blessing of the Crib and Midnight Mass: 11.15pm</p>
-
-            <Card className="float-right">
-                <CardImg top src={crib} />
-            </Card>
-
-            <h5>Christmas Day</h5>
-
-            <p>Christmas Morning Mass: 8.30am</p>
-
-            <p>Please join us for refreshments afterwards</p>
 
             <Card className="float-left">
                 <CardImg top src={taize} />

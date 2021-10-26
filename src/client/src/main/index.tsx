@@ -21,7 +21,8 @@ import { ClaresPrayers, claresPrayersPath } from './beginnings/ClaresPrayers';
 import { FrancisLife, francisLifePath } from './beginnings/FrancisLife';
 import { FrancisThoughts, francisThoughtsPath } from './beginnings/FrancisThoughts';
 import { FrancisPrayers, francisPrayersPath } from './beginnings/FrancisPrayers';
-import { Events, eventsPath } from './Events';
+import { Events, eventsPath } from './events/Events';
+import { EventsChristmas, eventsChristmasPath } from './events/EventsChristmas';
 import { FAQs, faqsPath } from './misc/FAQs';
 import { Links, linksPath } from './misc/Links';
 import { Glossary, glossaryPath } from './misc/Glossary';
@@ -30,6 +31,7 @@ import { Vocation, vocationPath } from './community/Vocation';
 import { Kenya, kenyaPath } from './community/Kenya';
 import { PrayerRequests, prayerRequestsPath } from './PrayerRequests';
 import { LightForTheWorld, lightForTheWorldPath } from './LightForTheWorld';
+import { EventsEaster, eventsEasterPath } from './events/EventsEaster';
 
 type Props = RouteComponentProps<{}>;
 
@@ -60,6 +62,8 @@ const Main: React.FC<Props> = props => (
                 <Route path={francisThoughtsPath} component={FrancisThoughts} />
                 <Route path={francisPrayersPath} component={FrancisPrayers} />
                 <Route path={eventsPath} component={Events} />
+                <Route path={eventsChristmasPath} component={EventsChristmas} />
+                <Route path={eventsEasterPath} component={EventsEaster} />
                 <Route path={faqsPath} component={FAQs} />
                 <Route path={linksPath} component={Links} />
                 <Route path={glossaryPath} component={Glossary} />

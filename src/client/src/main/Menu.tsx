@@ -38,7 +38,7 @@ import { claresPrayersPath } from './beginnings/ClaresPrayers';
 import { francisLifePath } from './beginnings/FrancisLife';
 import { francisThoughtsPath } from './beginnings/FrancisThoughts';
 import { francisPrayersPath } from './beginnings/FrancisPrayers';
-import { eventsPath } from './Events';
+import { eventsPath } from './events/Events';
 import { faqsPath } from './misc/FAQs';
 import { linksPath } from './misc/Links';
 import { glossaryPath } from './misc/Glossary';
