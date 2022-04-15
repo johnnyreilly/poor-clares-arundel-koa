@@ -9,7 +9,7 @@ import taize from './images/Taize.png';
 
 export const eventsPath = '/events';
 
-export const Events: React.FC = (_props) => {
+export const Events: React.FC<React.PropsWithChildren<unknown>> = (_props) => {
     var eventStructuredData = {
         '@context': 'https://schema.org',
         '@type': 'Event',
