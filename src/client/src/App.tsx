@@ -14,7 +14,7 @@ interface LoadingProps {
     noHeader?: boolean;
 }
 
-const Loading: React.FunctionComponent<LoadingProps> = (props) =>
+const Loading: React.FunctionComponent<React.PropsWithChildren<LoadingProps>> = (props) =>
     props.noHeader ? (
         <>
             <FontAwesomeIcon icon={faSnowflake} spin /> Loading {props.children} ...

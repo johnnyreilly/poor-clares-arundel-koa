@@ -7,7 +7,7 @@ import { prayerRequestsPath } from '../PrayerRequests';
 
 export const ourPrayerPath = '/our-prayer';
 
-export const OurPrayer: React.FC = _props => (
+export const OurPrayer: React.FC<React.PropsWithChildren<unknown>> = _props => (
     <>
         <img className="float-right img-thumbnail img-space-right-and-bottom" src={prayerOur2} alt="" />
         <h3>Our Prayer</h3>
